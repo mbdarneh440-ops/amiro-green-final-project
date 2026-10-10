@@ -1,0 +1,109 @@
+{
+  "checkedAt": "2026-10-10T13:04:47.8650610+03:00",
+  "url": "http://127.0.0.1:5173/",
+  "status": 200,
+  "version": 2,
+  "integrations": {
+    "make": true,
+    "syncEnabled": true,
+    "ai": false,
+    "mailbox": "demo@example.com",
+    "emailIntake": false
+  },
+  "sourceIds": [
+    "make:demo:academic-20261010-03",
+    "make:demo:academic-20261010-02"
+  ],
+  "proposals": [
+    {
+      "subject": "בקשת אבטחה — הדגמה אקדמית בלבד",
+      "sender": "demo@example.com",
+      "requesterName": "דני הדגמה.",
+      "body": "נתונים מלאכותיים לצורך הדגמה בלבד.\nשלום, חברת אירועי הדגמה מבקשת 1 מאבטח באולם הדגמה ביום 10/10/2026 משעה 12:00 עד 16:00 באותו יום. תעריף 80 ש״ח לשעה.\nאיש הקשר: דני הדגמה. טלפון: 050-000-0001.\nנא לשמור לבדיקה בלבד.",
+      "sourceId": "make:demo:academic-20261010-03",
+      "kind": "new",
+      "organization": "חברת אירועי הדגמה",
+      "siteName": "אולם הדגמה",
+      "contactName": "דני הדגמה.",
+      "requestSummary": "חברת אירועי הדגמה מבקשת 1 מאבטח באולם הדגמה ביום 10/10/2026 משעה 12:00 עד 16:00",
+      "phone": "050-000-0001.",
+      "date": "2026-10-10",
+      "endDate": "2026-10-10",
+      "start": "12:00",
+      "end": "16:00",
+      "count": 1,
+      "rate": 80,
+      "intake": {
+        "requestType": "new_request",
+        "isAutomated": false,
+        "extractionStatus": "validated",
+        "missingFields": [],
+        "warnings": [],
+        "sourceEvidence": {
+          "organization": "חברת אירועי הדגמה",
+          "site": "אולם הדגמה",
+          "contact_name": "דני הדגמה.",
+          "request_summary": "חברת אירועי הדגמה מבקשת 1 מאבטח באולם הדגמה ביום 10/10/2026 משעה 12:00 עד 16:00",
+          "contact_phone": "050-000-0001.",
+          "start_date": "10/10/2026",
+          "end_date": "10/10/2026",
+          "start_time": "12:00",
+          "end_time": "16:00",
+          "guard_count": "1 מאבטח",
+          "hourly_rate": "80 ש״ח לשעה."
+        },
+        "rangeNeedsReview": false
+      },
+      "id": "c10a6d4c-aee6-44d1-b7af-5b38d5e3d5e4",
+      "siteId": "",
+      "siteRevision": 0,
+      "status": "pending",
+      "received": "2026-10-10T11:56:13+03:00"
+    },
+    {
+      "subject": "בקשת אבטחה — הדגמה אקדמית בלבד",
+      "sender": "demo@example.com",
+      "requesterName": "דני הדגמה",
+      "body": "נתונים מלאכותיים לצורך הדגמה בלבד.\nשלום, חברת אירועי הדגמה מבקשת 1 מאבטח באולם הדגמה ביום 10/10/2026 משעה 12:00 עד 16:00 באותו יום. תעריף 80 ש״ח לשעה.\nאיש הקשר: דני הדגמה. טלפון: 050-000-0001.\nנא לשמור לבדיקה בלבד.",
+      "sourceId": "make:demo:academic-20261010-02",
+      "kind": "new",
+      "organization": "",
+      "siteName": "",
+      "contactName": "",
+      "requestSummary": "",
+      "phone": "",
+      "date": "",
+      "endDate": "",
+      "start": "",
+      "end": "",
+      "count": 0,
+      "rate": 0,
+      "intake": {
+        "requestType": "unclear",
+        "extractionStatus": "failed",
+        "missingFields": [
+          "organization",
+          "start_date",
+          "start_time",
+          "end_time",
+          "guard_count",
+          "hourly_rate"
+        ],
+        "warnings": [
+          "תוצאת החילוץ אינה JSON תקין. ההודעה המקורית נשמרה לבדיקה."
+        ],
+        "sourceEvidence": {},
+        "rangeNeedsReview": true
+      },
+      "id": "decaad3c-c934-4a47-9d8c-116ed8d0b376",
+      "siteId": "",
+      "siteRevision": 0,
+      "status": "pending",
+      "received": "2026-10-10T11:53:37+03:00"
+    }
+  ],
+  "managerApprovalVerified": false,
+  "scheduleApprovalVerified": false,
+  "recordingComplete": false,
+  "note": "Authenticated read of actual user-launched Desktop server. Synthetic Make records imported into pending review. Browser control stopped by physical Escape before review/recording."
+}

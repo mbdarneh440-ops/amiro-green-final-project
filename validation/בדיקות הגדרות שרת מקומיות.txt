@@ -1,0 +1,18 @@
+✔ actual schema persists data and accepts the existing workspace query contract (9.2041ms)
+✔ concurrent version checks protect a saved manager decision (0.3036ms)
+✔ parameters remain data rather than executable SQL (0.4605ms)
+✔ only owner whitelist is loaded and absent activation flags are false (1.6697ms)
+✔ default configuration stays disabled and unrelated bindings are excluded (2.7971ms)
+✔ private pointer replaces local config, without copying or inheriting keys (1.9792ms)
+✔ live getters follow external changes while preserving the actual database (3.4402ms)
+✔ an invalid or missing explicit file fails clearly rather than enabling another config (3.4932ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 88.3882
+Installed Vite evaluator: config-time live wrapper, database identity, browser guard, no credential literals or helper imports, and missing launcher passed.
+Real Vite middleware server and RSC ModuleRunner passed: no HTTP listen; virtual cloudflare binding loads, private config updates, and the current DB remains identical.

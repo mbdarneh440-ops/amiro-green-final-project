@@ -1,21 +1,11 @@
 import { DatabaseSync } from 'node:sqlite';
-import { existsSync, mkdirSync, readFileSync } from 'node:fs';
+import { mkdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { parseEnv } from 'node:util';
+import { createLiveEnvironment } from './local-owner-env.mjs';
+export { readLocalEnvironment } from './local-owner-env.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const allowed = ['MAKE_API_TOKEN', 'MAKE_ZONE', 'MAKE_DATA_STORE_ID', 'MAKE_INBOX_WEBHOOK_SECRET', 'INBOX_OWNER_ID', 'AI_API_KEY', 'AI_MODEL', 'MAKE_SYNC_ENABLED', 'COMPANY_MAILBOX', 'AI_ENABLED'];
-
-// Values stay on the server. Neither Vite's client environment nor generated
-// module text contains credentials from the owner's ignored .env file.
-export function readLocalEnvironment(projectRoot) {
-  const file = path.join(projectRoot, '.env');
-  const parsed = existsSync(file) ? parseEnv(readFileSync(file, 'utf8').replace(/^\uFEFF/, '')) : {};
-  const values = { MAKE_SYNC_ENABLED: 'false', AI_ENABLED: 'false' };
-  for (const key of allowed) if (Object.hasOwn(parsed, key)) values[key] = parsed[key];
-  return values;
-}
 
 export function createLocalDatabase(databasePath, migration) {
   const sqlite = new DatabaseSync(databasePath);
@@ -66,7 +56,7 @@ export function getLocalBindings() {
     mkdirSync(runtime, { recursive: true });
     const migration = readFileSync(path.join(root, 'drizzle', '0000_outgoing_puma.sql'), 'utf8');
     const DB = createLocalDatabase(path.join(runtime, 'node-workspace.sqlite'), migration);
-    cache.set(root, Object.freeze({ ...readLocalEnvironment(root), DB }));
+    cache.set(root, createLiveEnvironment(Object.freeze({ DB }), root));
   }
   return cache.get(root);
 }

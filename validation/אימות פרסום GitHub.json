@@ -1,0 +1,24 @@
+{
+  "repoUrl": "https://github.com/mbdarneh440-ops/amiro-green-final-project",
+  "branch": "main",
+  "commitSha": "9ed2c3f970693ca6e26de6c25844407b1442066d",
+  "treeSha": "bafe149c661421baee4c1b4a02b2bee1f0277c72",
+  "fileCount": 252,
+  "verifiedAt": "2026-10-10T10:04:40.121Z",
+  "allPathsAndBlobHashesVerified": true,
+  "readmeBlobShaVerified": "1d94051ea5cb598e5e4d515a55f35b80c2633faf",
+  "baselineCommitSha": "ce133f6a63456bda1cb55360ccf5d6cdc16b0427",
+  "publishedSnapshot": "reviewed-provisional-252-files",
+  "scope": "Hebrew academic source and deliverables, synthetic data and real Make experiment evidence",
+  "remaining": {
+    "websiteEndToEndVerified": false,
+    "realScreenRecordingComplete": false,
+    "submittedToMoodle": false
+  },
+  "excluded": [
+    "Actual env files and API keys",
+    "Private work and runtime files",
+    "Real customer database",
+    "Installed dependencies"
+  ]
+}

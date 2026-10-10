@@ -2,7 +2,7 @@
   "name": "אמירו גרין — חבילת GitHub להגשה אקדמית",
   "updatedDate": "2026-10-10",
   "language": "he",
-  "fileCount": 252,
+  "fileCount": 259,
   "launcherRepair": "Dependency installation completed; vinext CLI readiness probe added.",
   "siteOpenedByUser": true,
   "liveServicesActivated": false,
@@ -380,7 +380,7 @@
     {
       "path": "source/vite.config.ts",
       "purpose": "הגדרת בניית האתר וסביבת הפיתוח.",
-      "contents": "הגדרת Vite והגשר למשאבי השרת המקומי; הפעלת Windows בפועל עדיין ממתינה לאימות.",
+      "contents": "הגדרת Vite והפעלת הגשר המקומי; שרת Desktop בפועל החזיר נתונים וסנכרן בקשת בדיקה.",
       "category": "קוד האתר",
       "bytes": 2576,
       "sha256": "f085c2630c4ef465e756d4e0afdffc8b35b8353d2ac6a13fc310d19af3eac02f"
@@ -516,7 +516,7 @@
     {
       "path": "source/scripts/start-local.mjs",
       "purpose": "הכנה ופתיחת האתר במחשב המקומי.",
-      "contents": "בדיקת תלויות וסביבת Node, בחירת כתובת והימנעות משינוי תיקייה מיותר; אימות ממשק Windows עדיין ממתין.",
+      "contents": "הכנה ופתיחת השרת המקומי; הפעלה שביצע הסטודנט ב-Windows אומתה בנתוני שרת בפועל.",
       "category": "קוד האתר",
       "bytes": 7668,
       "sha256": "002a097a231fa6ba23bb1a272687ba4857c98a2d8ae83773235929e4f4719e83"
@@ -598,8 +598,8 @@
       "purpose": "המדריך הראשי עם חיפוש בעברית.",
       "contents": "גישה מהירה למפעילים ולמסמכים, וכן שם, תפקיד ותוכן של כל קובץ בפרויקט.",
       "category": "התחילו כאן",
-      "bytes": 116532,
-      "sha256": "17ce869f34754309fa4a7913831a9a26973a957b12183b74b77fd7c8141e3820"
+      "bytes": 120951,
+      "sha256": "1ce06d5edfc2b82601d4682c84bf62e51ee3477a16664d466d0f06884ea2e4ed"
     },
     {
       "path": "חיבור Make.txt",
@@ -630,8 +630,8 @@
       "purpose": "מדריך מלא לכל הקבצים בטקסט.",
       "contents": "לכל קובץ: נתיב, תפקיד ותוכן, מסודרים לפי קטגוריות.",
       "category": "התחילו כאן",
-      "bytes": 72229,
-      "sha256": "1cedd21e352c78462573b5020e5ca9b9f20f0924aab3b769e3c588c2096a9d61"
+      "bytes": 75238,
+      "sha256": "e3f3000db3058ed9bd5f71ed17c89fdb792ba82e1d2688af257d6315aa8c78f6"
     },
     {
       "path": "מפת הקבצים.json",
@@ -908,10 +908,10 @@
     {
       "path": "README.md",
       "purpose": "הסבר הפרויקט, הפעלה ומצב האימות הנוכחי.",
-      "contents": "הדגמת Make AI חיה, מסמכי ההגשה, ראיות וגבולות האתר, Gmail, Forms וההקלטה.",
+      "contents": "מסמך עברי מעודכן: Make AI וקליטת אתר אומתו עד לטיוטה ממתינה, GitHub פורסם; מנהל, שיבוץ, סרטון ומודל עדיין לא הושלמו.",
       "category": "הגשה אקדמית",
-      "bytes": 12251,
-      "sha256": "7e0bbb4879ea914ae365dedbcdf83fc6c48bfe04537b7406ed5fcf12792adcb3"
+      "bytes": 14233,
+      "sha256": "9b04f2310b69398898900aa972503df9482a4874af7a058aa8ef9549949df7ed"
     },
     {
       "path": "source/app/layout.tsx",
@@ -1828,10 +1828,10 @@
     {
       "path": "מדריך הגשה.txt",
       "purpose": "הסבר הגשת התוצרים במודל והקוד ב-GitHub.",
-      "contents": "שלושת התוצרים והקלטה, הרשאות גישה, הפעלה ושימוש בנתונים מלאכותיים.",
+      "contents": "מסמך עברי מעודכן: Make AI וקליטת אתר אומתו עד לטיוטה ממתינה, GitHub פורסם; מנהל, שיבוץ, סרטון ומודל עדיין לא הושלמו.",
       "category": "הגשה אקדמית",
-      "bytes": 3924,
-      "sha256": "1e60631d4749f7dfe2593da8890552f83a9b61d0a3815a1cb26b17f18ef63e35"
+      "bytes": 3799,
+      "sha256": "b4639c29774936ea17e12fa8ac4270c81ee21e294829132ec85397b6f0ea8f71"
     },
     {
       "path": "evidence/צילום Make — מסלול הדואר.png",
@@ -1844,55 +1844,55 @@
     {
       "path": "מפת דרישות והשלמות.md",
       "purpose": "מיפוי הנחיות הקורס מול המצב שנבדק.",
-      "contents": "הבדלה בין הרצת Make שהצליחה לבין אתר, הקלטה ופרסום שטרם אומתו.",
+      "contents": "מסמך עברי מעודכן: Make AI וקליטת אתר אומתו עד לטיוטה ממתינה, GitHub פורסם; מנהל, שיבוץ, סרטון ומודל עדיין לא הושלמו.",
       "category": "הגשה אקדמית",
-      "bytes": 5221,
-      "sha256": "3240a97f2d25d37c46593a9a3e8154e8f0111b0df6df4efd393c505b3f455b67"
+      "bytes": 5223,
+      "sha256": "5216ca7ceea273456845125ca6e2f00e8ff0b60dc1320bf18687d573b8aa0deb"
     },
     {
       "path": "submission/מוחמד בדארנה - אמירו גרין - מסמך פרויקט.md",
       "purpose": "מסמך הפרויקט בששת פרקי הקורס.",
-      "contents": "PRD, פתרון, סיכונים, הנחות ROI, פיילוט עתידי ותוצאות Make טכניות; עדיין ממתין לתוצאות האתר.",
+      "contents": "מסמך עברי מעודכן: Make AI וקליטת אתר אומתו עד לטיוטה ממתינה, GitHub פורסם; מנהל, שיבוץ, סרטון ומודל עדיין לא הושלמו.",
       "category": "הגשה אקדמית",
-      "bytes": 21861,
-      "sha256": "c795c5911ec0db5c3a0eb5437241014c5866eab5aa5930ef406728099c503d76"
+      "bytes": 23700,
+      "sha256": "5fc1b389fdebb4bc8aa4fe31635b235d3b3d060446f35a3e4d17d2d74c9426c7"
     },
     {
       "path": "submission/מוחמד בדארנה - אמירו גרין - אפיון PRD.md",
       "purpose": "אפיון הפרויקט עבור מוחמד בדארנה.",
-      "contents": "צורך המשתמש, חמש פעמים למה, מדד מוצע כהנחה וגבולות הגרסה.",
+      "contents": "מסמך עברי מעודכן: Make AI וקליטת אתר אומתו עד לטיוטה ממתינה, GitHub פורסם; מנהל, שיבוץ, סרטון ומודל עדיין לא הושלמו.",
       "category": "הגשה אקדמית",
-      "bytes": 3808,
-      "sha256": "1727d3398ae25b289b81a50084e82841ac598e34381f7ef3f3bd2406126a0842"
+      "bytes": 3986,
+      "sha256": "325bfb5fd824741a2b2545c679b5850f90d69e1ad6fcaa47783ffcc971336fc6"
     },
     {
       "path": "submission/מוחמד בדארנה - אמירו גרין - מצגת טיוטה.pdf",
-      "purpose": "מצגת בעברית עם תוצאת Make שהצליחה.",
-      "contents": "12 שקפים, תמונת Make אמיתית, מדידת הרצה טכנית והנחות ROI; האתר וההקלטה עדיין אינם מאומתים.",
+      "purpose": "מצגת הפרויקט בעברית להצגה בכיתה.",
+      "contents": "12 שקפים: PRD, ארכיטקטורה, תוצאת Make וקליטה באתר, סיכונים, ROI כהנחות, פיילוט עתידי והקלטת גיבוי שעדיין חסרה; כל העמודים רונדרו ונבדקו.",
       "category": "הגשה אקדמית",
-      "bytes": 482198,
-      "sha256": "8324ee7b968aac63fb25ded4b845b97e1d68ba1983339e793513fce176ce20f8"
+      "bytes": 236551,
+      "sha256": "4aa630d615d7577ee1ccc0307a3a13176f0a6cbba369b16a917e27b01f948be7"
     },
     {
       "path": "source/build/local-node-bindings-plugin.ts",
-      "purpose": "חיבור קוד האתר למשאבי שרת Node המקומי.",
-      "contents": "מודול Vite וירטואלי עם גשר שרת בלבד וזהות משאבים משותפת; בדיקת המודול באמצעות Vite עברה.",
+      "purpose": "חיבור Vite למשאבי שרת Node המקומי.",
+      "contents": "גשר שרת משותף ועטיפת הגדרות בזמן טעינת התצורה; שומר את זהות המסד וחוסם ייבוא משאבי שרת לדפדפן.",
       "category": "קוד האתר",
-      "bytes": 1850,
-      "sha256": "a765d76d1471433499db34169c0b4eb95625fe8c086ea976188578517374931b"
+      "bytes": 2491,
+      "sha256": "c12f67d002932d18f5a2730bb43037456df57bd022b2f508f41d89724d0f72cd"
     },
     {
       "path": "source/scripts/local-node-runtime.mjs",
-      "purpose": "משאבי סביבת Node להפעלה מקומית.",
-      "contents": "אחסון תואם שאילתות היישום, בדיקת גרסאות ועדכון סביבה לפי רשימה מאושרת.",
+      "purpose": "אחסון ומשאבי Node להפעלה מקומית.",
+      "contents": "מסד מקומי תואם לשאילתות היישום וגשר להגדרות חיות; זהות מסד הנתונים נשמרת.",
       "category": "קוד האתר",
-      "bytes": 3538,
-      "sha256": "995df252b2c6e55b738b1e06f8e42f1b47007792e7a714d58de30aefa2da134c"
+      "bytes": 2884,
+      "sha256": "abef020fa99a7a5b8969b9af3f50259749a558669cb53d7828aa4e58c2dc986c"
     },
     {
       "path": "source/scripts/start-node-server.mjs",
       "purpose": "הפעלת שרת האתר באמצעות Node.",
-      "contents": "טעינת משאבי השרת המקומי והגדרות חיבור, עם הגנה מפני שינוי תיקייה מיותר.",
+      "contents": "טעינת שרת Node, אחסון והגדרות פרטיות; קבלת נתונים משרת Desktop אומתה.",
       "category": "קוד האתר",
       "bytes": 1239,
       "sha256": "82f584f4b540b11a1343a17431abee4be54caee98e02dad56110715c4e1b548b"
@@ -1996,43 +1996,99 @@
     {
       "path": "מוחמד בדארנה - אמירו גרין - מסמך פרויקט.md",
       "purpose": "מסמך הפרויקט — עותק נגיש בראש המאגר.",
-      "contents": "ששת הפרקים ותוצאת Make שהוכחה; זהה לעותק ב-submission.",
+      "contents": "מסמך עברי מעודכן: Make AI וקליטת אתר אומתו עד לטיוטה ממתינה, GitHub פורסם; מנהל, שיבוץ, סרטון ומודל עדיין לא הושלמו.",
       "category": "הגשה אקדמית",
-      "bytes": 21861,
-      "sha256": "c795c5911ec0db5c3a0eb5437241014c5866eab5aa5930ef406728099c503d76"
+      "bytes": 23700,
+      "sha256": "5fc1b389fdebb4bc8aa4fe31635b235d3b3d060446f35a3e4d17d2d74c9426c7"
     },
     {
       "path": "מוחמד בדארנה - אמירו גרין - אפיון PRD.md",
       "purpose": "אפיון PRD — עותק נגיש בראש המאגר.",
-      "contents": "צורך המשתמש, מטרות והנחות; זהה לעותק ב-submission.",
+      "contents": "מסמך עברי מעודכן: Make AI וקליטת אתר אומתו עד לטיוטה ממתינה, GitHub פורסם; מנהל, שיבוץ, סרטון ומודל עדיין לא הושלמו.",
       "category": "הגשה אקדמית",
-      "bytes": 3808,
-      "sha256": "1727d3398ae25b289b81a50084e82841ac598e34381f7ef3f3bd2406126a0842"
+      "bytes": 3986,
+      "sha256": "325bfb5fd824741a2b2545c679b5850f90d69e1ad6fcaa47783ffcc971336fc6"
     },
     {
       "path": "מוחמד בדארנה - אמירו גרין - מצגת.pdf",
-      "purpose": "מצגת עברית — עותק נגיש בראש המאגר.",
-      "contents": "12 שקפים עם תוצאת Make אמיתית וגבולות האימות; זהה לעותק ב-submission.",
+      "purpose": "מצגת הפרויקט בעברית להצגה בכיתה.",
+      "contents": "12 שקפים: PRD, ארכיטקטורה, תוצאת Make וקליטה באתר, סיכונים, ROI כהנחות, פיילוט עתידי והקלטת גיבוי שעדיין חסרה; כל העמודים רונדרו ונבדקו.",
       "category": "הגשה אקדמית",
-      "bytes": 482198,
-      "sha256": "8324ee7b968aac63fb25ded4b845b97e1d68ba1983339e793513fce176ce20f8"
+      "bytes": 236551,
+      "sha256": "4aa630d615d7577ee1ccc0307a3a13176f0a6cbba369b16a917e27b01f948be7"
     },
     {
       "path": "validation/אימות חבילת ההגשה.json",
       "purpose": "אימות גרסת חבילת ההגשה וגבולות ההדגמה.",
       "contents": "גיבובי הגרסה הקודמת והשינויים, מזהי הרצה, נתוני הדגמה ומצב התוצרים; פרטי גישה ומפתחות אינם כלולים.",
       "category": "בדיקות ואימות",
-      "bytes": 8327,
-      "sha256": "d72c726590cf62d9fab445af331788caea38d464c2b472954f5fd723bc6bb443"
+      "bytes": 7577,
+      "sha256": "ce24cf51ed7fe711787c31042e8eb00e6f1b6d89b07e8d0dc5903fde9ab6fb3f"
+    },
+    {
+      "path": "source/scripts/local-owner-env.mjs",
+      "purpose": "קריאת הגדרות שרת פרטיות ללא העתקת מפתחות.",
+      "contents": "רשימת הגדרות מאושרת, ברירת מחדל כבויה, בחירת קובץ מקומי פרטי וקריאה חיה בשרת בלבד; אין קובץ הגדרות או מצביע בחבילה.",
+      "category": "קוד האתר",
+      "bytes": 2438,
+      "sha256": "2cc6241dd36526dab4e92ac64a2ee5d72e70751d091b275f28897d5f67a74333"
+    },
+    {
+      "path": "source/tests/local-owner-env.test.mjs",
+      "purpose": "בדיקות הגדרות מקומיות ושמירת זהות המסד.",
+      "contents": "ארבע בדיקות ממוקדות: ברירת מחדל כבויה, בחירה פרטית, שינוי חי ופעולת כשל ברורה; רק ערכי בדיקה מלאכותיים.",
+      "category": "בדיקות ואימות",
+      "bytes": 3556,
+      "sha256": "f9c9366e22f43de3e79fe0cdd985f0d7bf9e9ae29d3771c6dba7f5d4ff455b7c"
+    },
+    {
+      "path": "validation/בדיקות הגדרות שרת מקומיות.txt",
+      "purpose": "תוצאות בדיקות הגדרות חיות ו-Vite.",
+      "contents": "שמונה בדיקות Node עברו, וכן evaluator מותקן ושרת middleware אמיתי ללא האזנת HTTP; מידע בדיקה מלאכותי.",
+      "category": "בדיקות ואימות",
+      "bytes": 1139,
+      "sha256": "9ddb2b5dab7b4e674d5d625c97bf565442912c519fa4042fed74ab74ff2ad84d"
+    },
+    {
+      "path": "validation/אימות קליטת Make באתר.json",
+      "purpose": "נתוני אימות קליטת בקשות בשרת האתר בפועל.",
+      "contents": "קריאה מאומתת של שרת Desktop, HTTP 200 וגרסה 2; בקשה תקינה ממתינה לבדיקה וטיוטת JSON שגוי עם אזהרה. נתונים מלאכותיים בלבד.",
+      "category": "בדיקות ואימות",
+      "bytes": 4386,
+      "sha256": "52cf9fb42c2949e9fc331621d1efdc2e315e940fc4dc5f7bc7ad7588e12d9afc"
+    },
+    {
+      "path": "validation/אימות פרסום GitHub.json",
+      "purpose": "תיעוד פרסום גרסת הבסיס ב-GitHub.",
+      "contents": "מזהה commit ו-tree של 252 הקבצים שפורסמו, התאמת כל גיבובי הקבצים; מצב האתר והסרטון ברישום מתייחס לזמן פרסום גרסת הבסיס.",
+      "category": "בדיקות ואימות",
+      "bytes": 908,
+      "sha256": "af1b37d01a2cd128fe01af157d574b9561380ec78e5595ffbb0be0b02856096f"
+    },
+    {
+      "path": "validation/מצב תרחישי Make עדכני.json",
+      "purpose": "מצב תרחישי החברה וההדגמה בבדיקה האחרונה.",
+      "contents": "שלושת תרחישי Gmail ו-Forms מושהים; תרחיש המידע המלאכותי פעיל להרצה לפי דרישה בלבד, ללא תזמון.",
+      "category": "בדיקות ואימות",
+      "bytes": 1196,
+      "sha256": "f1a8b983d9ece85515ceec6b859b65782ec46721e5b6bd853939e70f4d048a46"
+    },
+    {
+      "path": "validation/אימות עימוד מצגת סופי.json",
+      "purpose": "אימות עימוד המצגת העברית המעודכנת.",
+      "contents": "12 שקפים עם טקסט בעברית, ללא גלישת טקסט; שקפים מתוקנים נבדקו חזותית.",
+      "category": "בדיקות ואימות",
+      "bytes": 106,
+      "sha256": "4795c46d29543265f156f2559390d06f80b30fe4b27d670a1ea55f80f5946272"
     }
   ],
   "submissionRequirementConfirmed": true,
-  "repositoryPublished": false,
+  "repositoryPublished": true,
   "makeRunVerified": true,
   "submissionRequirementsSource": "פרויקט גמר הנחיות.pdf (שני עמודים)",
   "submissionComplete": false,
-  "reportComplete": false,
-  "presentationComplete": false,
+  "reportComplete": true,
+  "presentationComplete": true,
   "recordingComplete": false,
   "studentName": "מוחמד בדארנה",
   "reportDraftAvailable": true,
@@ -2040,11 +2096,11 @@
   "presentationDraftAvailable": true,
   "makeAccountCheckDate": "2026-10-10",
   "makeNextReset": "2026-11-10",
-  "baselineCatalogSha256": "b131005144d82f88de9383fb0846acf5b70615e997184f7dbcf19c511604ea26",
-  "repositoryUrl": null,
-  "gitHubPublished": false,
+  "baselineCatalogSha256": "3762dacb82460c6b1acc2527f02181041312796f81b6db7f79fa8fb6535b84c4",
+  "repositoryUrl": "https://github.com/mbdarneh440-ops/amiro-green-final-project",
+  "gitHubPublished": true,
   "formsEndToEndVerified": false,
-  "siteImportVerified": false,
+  "siteImportVerified": true,
   "scheduleApprovalVerified": false,
   "submittedToMoodle": false,
   "scheduleDraftVerified": false,

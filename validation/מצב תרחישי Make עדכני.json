@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-10-10T10:06:44.941Z",
+  "scope": "Production Gmail and both Forms automations remain inactive; the synthetic demo runs on demand only.",
+  "scenarios": [
+    {
+      "id": 7764136,
+      "name": "אמירו גרין — בקשות Gmail ומענה בעברית",
+      "status": "inactive",
+      "trigger": "polling",
+      "scheduling": {
+        "type": "indefinitely",
+        "interval": 3600
+      }
+    },
+    {
+      "id": 7766422,
+      "name": "אמירו גרין — זמינות עובדים · ניהול א",
+      "status": "inactive",
+      "trigger": "polling",
+      "scheduling": {
+        "type": "indefinitely",
+        "interval": 900
+      }
+    },
+    {
+      "id": 7766424,
+      "name": "אמירו גרין — זמינות עובדים · ניהול ב",
+      "status": "inactive",
+      "trigger": "polling",
+      "scheduling": {
+        "type": "indefinitely",
+        "interval": 900
+      }
+    },
+    {
+      "id": 7875039,
+      "name": "אמירו גרין — הדגמה חיה: AI → אתר → מנהל",
+      "status": "active",
+      "trigger": "on-demand",
+      "scheduling": {
+        "type": "on-demand"
+      }
+    }
+  ]
+}
