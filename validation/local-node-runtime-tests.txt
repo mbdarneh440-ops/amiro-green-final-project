@@ -1,0 +1,12 @@
+✔ actual schema persists data and accepts the existing workspace query contract (13.4237ms)
+✔ concurrent version checks protect a saved manager decision (0.2987ms)
+✔ parameters remain data rather than executable SQL (0.4393ms)
+✔ only owner whitelist is loaded and absent activation flags are false (1.0891ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 84.3533

@@ -1,0 +1,1 @@
+Whole-app TypeScript passed with workspace make.ts/email-intake.test.ts overlays and installed original dependencies. No original files were written.

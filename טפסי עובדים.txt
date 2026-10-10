@@ -1,0 +1,17 @@
+FORMS — טופסי העובדים וגיליונות התשובות
+
+טופס א:
+https://docs.google.com/forms/d/1Cu2fwvNlyHT-mGai2234K8wQtjQNpVnfdBq4Rq6Yzyo/edit
+גיליון א:
+https://docs.google.com/spreadsheets/d/1pXxBEnJYWHLi4Sd-gwuFQih6mOzZUkCBIuUvGtKI-cE/edit
+
+טופס ב:
+https://docs.google.com/forms/d/1y_8R4AnPf6AqoVY1uR5PWXombOiBD4cAq1FD_KHBWto/edit
+גיליון ב:
+https://docs.google.com/spreadsheets/d/1BuohXEKiMm7paVwFAsIyFm-DeR7iD7nVKNH_ZNH_f7M/edit
+
+אלה קישורים למשאבים הנוכחיים ב-Google, הדורשים חשבון והרשאות מתאימים. המשאבים עצמם אינם עותקים מקומיים בתיקייה הזאת.
+שני הטפסים כוללים שם, טלפון וטבלת שבוע עם שבעה ימים; אפשר לבחור כמה משמרות ולהשאיר יום ריק. התאריך של כל יום מתקדם לפי שבוע ראשון–שבת.
+בדיקת 07/10/2026 הציגה את השבוע 04/10/2026–10/10/2026. העדכון הנוכחי מתבצע באמצעות מעקב Codex ודורש את המחשב, היישום וחיבור לטפסים.
+owner-google-dates/ מכיל חלופת Google Apps Script שהוכנה לעתיד, כבויה כברירת מחדל ולא מותקנת או בדוקה בפועל ב-Google. יש לבדוק אותה על עותק ולהגדיר את החשבון וההרשאות לפני השימוש, ולהפעיל מעדכן אחד בלבד.
+עמודה L (שבוע אוטומטי) קובעת את יום ראשון מתוך Timestamp לכל תשובה, ונשארת ריקה בתשובה ישנה עם שבוע ידני בעמודה D. אין להשתמש ב-TODAY לשינוי תאריכי התשובות הישנות.

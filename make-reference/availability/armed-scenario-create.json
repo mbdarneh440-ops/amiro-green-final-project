@@ -1,0 +1,79 @@
+{
+  "OWNER_HANDOFF_REFERENCE": true,
+  "NOT_DIRECTLY_IMPORTABLE": true,
+  "notice": "Account, connection, scenario, datastore and form IDs are placeholders. Configure and authorize the owner connections before any future use; keep inactive until runtime verification.",
+  "reference": {
+    "teamId": "<TEAM_ID>",
+    "name": "אמירו גרין — זמינות עובדים · ניהול ב",
+    "scheduling": {
+      "type": "indefinitely",
+      "interval": 900
+    },
+    "autoActivate": false,
+    "modules": [
+      {
+        "id": 1,
+        "module": "google-sheets:watchRows",
+        "version": 2,
+        "root": "main",
+        "label": "תשובות זמינות · ניהול ב",
+        "config": {
+          "parameters": {
+            "__IMTCONN__": "<GOOGLE_SHEETS_CONNECTION_ID>",
+            "mode": "select",
+            "from": "drive",
+            "spreadsheetId": "<ARMED_SHEET_ID>",
+            "sheetId": "Form Responses 1",
+            "includesHeaders": true,
+            "tableFirstRow": "A1:L1",
+            "limit": 100,
+            "valueRenderOption": "FORMATTED_VALUE",
+            "dateTimeRenderOption": "FORMATTED_STRING"
+          },
+          "mapper": {}
+        }
+      },
+      {
+        "id": 2,
+        "module": "datastore:AddRecord",
+        "version": 1,
+        "follows": 1,
+        "label": "שמירת זמינות לבדיקה — ללא אישור אוטומטי",
+        "filter": {
+          "name": "תשובת טופס עם חותמת זמן",
+          "conditions": [
+            [
+              {
+                "a": "{{1.`0`}}",
+                "o": "exist"
+              },
+              {
+                "a": "{{1.`0`}}",
+                "o": "text:notequal",
+                "b": ""
+              }
+            ]
+          ]
+        },
+        "config": {
+          "parameters": {
+            "datastore": "<DATASTORE_ID>"
+          },
+          "mapper": {
+            "key": "availability:<ARMED_SHEET_ID>:{{1.`__ROW_NUMBER__`}}",
+            "overwrite": true,
+            "data": {
+              "sourceId": "availability:<ARMED_SHEET_ID>:{{1.`__ROW_NUMBER__`}}",
+              "subject": "זמינות שבועית · ב",
+              "sender": "Google Forms",
+              "body": "שם מלא: {{1.`1`}}\nמספר טלפון: {{1.`2`}}\nתאריך תחילת השבוע (יום ראשון): {{1.`3`}}\nיום ראשון: {{1.`4`}}\nיום שני: {{1.`5`}}\nיום שלישי: {{1.`6`}}\nיום רביעי: {{1.`7`}}\nיום חמישי: {{1.`8`}}\nיום שישי: {{1.`9`}}\nיום שבת: {{1.`10`}}\nשבוע אוטומטי: {{1.`11`}}",
+              "receivedAt": "{{1.`0`}}",
+              "requestType": "availability.armed",
+              "requesterName": "{{1.`1`}}"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

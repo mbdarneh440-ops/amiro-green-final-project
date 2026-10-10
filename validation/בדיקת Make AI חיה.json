@@ -1,0 +1,27 @@
+{
+  "recordedOn": "2026-10-10",
+  "kind": "manual-synthetic-input-to-Make-AI-and-data-store",
+  "scenarioId": 7875039,
+  "dataStoreId": 213123,
+  "productionEnabled": false,
+  "gmailTested": false,
+  "googleFormsTested": false,
+  "websiteVerified": false,
+  "execution": {
+    "id": "b32572cec6654ca6a3885037b723d5db",
+    "status": "success",
+    "startedAt": "2026-10-10T08:56:06.835Z",
+    "duration": 6472,
+    "operations": 3,
+    "credits": 5.89
+  },
+  "result": {
+    "executionId": "b32572cec6654ca6a3885037b723d5db",
+    "status": "success",
+    "outputs": {
+      "message_id": "academic-20261010-03",
+      "extraction_json": "{\"request_type\":\"new_request\",\"organization\":\"חברת אירועי הדגמה\",\"site\":\"אולם הדגמה\",\"start_date\":\"2026-10-10\",\"end_date\":\"2026-10-10\",\"start_time\":\"12:00\",\"end_time\":\"16:00\",\"guard_count\":\"1\",\"missing_fields\":\"\",\"ambiguities\":\"\",\"source_evidence\":\"{\\\"organization\\\":\\\"חברת אירועי הדגמה\\\",\\\"site\\\":\\\"אולם הדגמה\\\",\\\"contact_name\\\":\\\"דני הדגמה.\\\",\\\"request_summary\\\":\\\"חברת אירועי הדגמה מבקשת 1 מאבטח באולם הדגמה ביום 10/10/2026 משעה 12:00 עד 16:00\\\",\\\"contact_phone\\\":\\\"050-000-0001.\\\",\\\"start_date\\\":\\\"10/10/2026\\\",\\\"end_date\\\":\\\"10/10/2026\\\",\\\"start_time\\\":\\\"12:00\\\",\\\"end_time\\\":\\\"16:00\\\",\\\"guard_count\\\":\\\"1 מאבטח\\\",\\\"hourly_rate\\\":\\\"80 ש״ח לשעה.\\\"}\",\"contact_phone\":\"050-000-0001.\",\"hourly_rate\":\"80\",\"is_automated\":false,\"contact_name\":\"דני הדגמה.\",\"request_summary\":\"חברת אירועי הדגמה מבקשת 1 מאבטח באולם הדגמה ביום 10/10/2026 משעה 12:00 עד 16:00\"}",
+      "status": "draft_unvalidated"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "OWNER_HANDOFF_REFERENCE": true,
+  "NOT_DIRECTLY_IMPORTABLE": true,
+  "notice": "Account, connection, scenario, datastore and form IDs are placeholders. Configure and authorize the owner connections before any future use; keep inactive until runtime verification.",
+  "reference": {
+    "notice": "Remapping checklist, not a directly executable scenario-create payload",
+    "teamId": "<MAKE_TEAM_ID>",
+    "googleConnectionId": "<GOOGLE_SHEETS_CONNECTION_ID>",
+    "sharedDataStoreId": "<SHARED_DATA_STORE_ID>",
+    "sharedSchemaId": "<SHARED_DATA_STRUCTURE_ID_SUPPORTING_FIELDS>",
+    "formA": {
+      "spreadsheetId": "<FORM_A_RESPONSE_SHEET_ID>",
+      "sheetName": "<FORM_A_RESPONSE_TAB_NAME>",
+      "sourceIdAndKey": "availability:<FORM_A_RESPONSE_SHEET_ID>:{{1.`__ROW_NUMBER__`}}",
+      "requestType": "availability.unarmed",
+      "subject": "זמינות שבועית · א"
+    },
+    "formB": {
+      "spreadsheetId": "<FORM_B_RESPONSE_SHEET_ID>",
+      "sheetName": "<FORM_B_RESPONSE_TAB_NAME>",
+      "sourceIdAndKey": "availability:<FORM_B_RESPONSE_SHEET_ID>:{{1.`__ROW_NUMBER__`}}",
+      "requestType": "availability.armed",
+      "subject": "זמינות שבועית · ב"
+    },
+    "site": "Configure the source allowlist and group mapping to match the new IDs; preserve the fixed A:L column layout. No secrets belong in the blueprint.",
+    "cursor": "<OWNER_START_POINT_CHOICE_BEFORE_ACTIVATION>",
+    "autoActivate": false,
+    "scheduleSeconds": 900
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "OWNER_HANDOFF_REFERENCE": true,
+  "NOT_DIRECTLY_IMPORTABLE": true,
+  "notice": "Account, connection, scenario, datastore and form IDs are placeholders. Configure and authorize the owner connections before any future use; keep inactive until runtime verification.",
+  "reference": {
+    "sender": "Google Forms",
+    "sourceIdPattern": "availability:<spreadsheetId>:<row number>",
+    "subjectA": "זמינות שבועית · א",
+    "subjectB": "זמינות שבועית · ב",
+    "requestTypeA": "availability.unarmed",
+    "requestTypeB": "availability.armed",
+    "headersRange": "A1:L1",
+    "rawCheckboxCells": true,
+    "mappings": [
+      {
+        "column": "A",
+        "index": 0,
+        "meaning": "original submission timestamp",
+        "usedBy": "receivedAt",
+        "expression": "{{1.`0`}}"
+      },
+      {
+        "column": "B",
+        "index": 1,
+        "label": "שם מלא",
+        "expression": "{{1.`1`}}"
+      },
+      {
+        "column": "C",
+        "index": 2,
+        "label": "מספר טלפון",
+        "expression": "{{1.`2`}}"
+      },
+      {
+        "column": "D",
+        "index": 3,
+        "label": "תאריך תחילת השבוע (יום ראשון)",
+        "expression": "{{1.`3`}}"
+      },
+      {
+        "column": "E",
+        "index": 4,
+        "label": "יום ראשון",
+        "expression": "{{1.`4`}}"
+      },
+      {
+        "column": "F",
+        "index": 5,
+        "label": "יום שני",
+        "expression": "{{1.`5`}}"
+      },
+      {
+        "column": "G",
+        "index": 6,
+        "label": "יום שלישי",
+        "expression": "{{1.`6`}}"
+      },
+      {
+        "column": "H",
+        "index": 7,
+        "label": "יום רביעי",
+        "expression": "{{1.`7`}}"
+      },
+      {
+        "column": "I",
+        "index": 8,
+        "label": "יום חמישי",
+        "expression": "{{1.`8`}}"
+      },
+      {
+        "column": "J",
+        "index": 9,
+        "label": "יום שישי",
+        "expression": "{{1.`9`}}"
+      },
+      {
+        "column": "K",
+        "index": 10,
+        "label": "יום שבת",
+        "expression": "{{1.`10`}}"
+      },
+      {
+        "column": "L",
+        "index": 11,
+        "label": "שבוע אוטומטי",
+        "expression": "{{1.`11`}}"
+      }
+    ]
+  }
+}

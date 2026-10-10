@@ -1,0 +1,39 @@
+✔ facts need original evidence; phone leading zero and body name are preserved (2.7913ms)
+✔ missing phone stays blank; header name is marked separately (0.3291ms)
+✔ names and summary cannot be taken from header or subject evidence (0.138ms)
+✔ malformed extraction keeps raw email and does not create invented fields (0.1207ms)
+✔ AI missing-field contradiction blanks suggested phone (0.5133ms)
+✔ same source ID updates one row and preserves manual notes and status (0.3617ms)
+✔ duplicated identical source collapses; conflicting source aborts (0.5296ms)
+✔ CSV preserves Arabic/Hebrew and neutralizes formula injection (0.4422ms)
+✔ invalid batch leaves prior JSON and CSV byte-for-byte unchanged (12.3883ms)
+✔ remote failure and malformed page do not replace a valid local ledger (6.8541ms)
+✔ paged pull reads all records and uses allowlisted config without printing token (0.651ms)
+✔ local lock prevents simultaneous updates and is released after error (2.327ms)
+✔ missing XLSX renderer never claims an Excel export (0.8505ms)
+✔ direct live CLI gate needs explicit enabled flag and company mailbox (0.2543ms)
+✔ optional failed Excel exporter leaves JSON/CSV usable without failing the mirror (104.6903ms)
+✔ owner parser handles safe quoted or plain values; AI and unknown settings are not propagated (1.0889ms)
+✔ inactive flag, missing mailbox, bad zone and missing credentials block launch (0.5716ms)
+✔ dotenv parsing rejects duplicate required fields, line injection and non-string JSON (0.3265ms)
+✔ watch plan uses local persistent folder and keeps credentials out of argv (0.3778ms)
+✔ runner arguments cannot accept a secret or implicitly enable a service (0.1677ms)
+✔ future chosen env is read only in an explicit fixture and respects inactive gate (6.9315ms)
+✔ fresh owner values leave both services inactive by default (1.4097ms)
+✔ activation only uses explicit flags and AI needs a new provided key (0.4163ms)
+✔ validation rejects env-line injection, invalid domain, zone, and store ID (0.2953ms)
+✔ unknown command and secret argv options never echo supplied secrets (0.0935ms)
+✔ masked input hides characters, supports deletion, and restores terminal (0.4319ms)
+✔ multiline secret and piped input fail without writing leaked input (0.21ms)
+✔ fresh file is complete and has inactive flags; no temporary secret file remains (8.302ms)
+✔ existing nonempty or empty env is untouched without explicit replacement (3.4458ms)
+✔ explicit replacement never preserves unknown settings or old student credentials (4.2253ms)
+✔ missing project package refuses configuration and never creates an env (0.9695ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 197.994

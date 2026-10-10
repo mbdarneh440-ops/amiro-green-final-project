@@ -1,0 +1,1 @@
+Whole-app TypeScript passed with portable Node config/plugin overlays. No original files written.

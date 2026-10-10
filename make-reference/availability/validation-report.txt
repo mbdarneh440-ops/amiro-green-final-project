@@ -1,0 +1,9 @@
+> Owner handoff reference: account identifiers are placeholders; current runtime or direct import is not asserted.
+
+Native creation: two scenarios saved, autoActivate=false, errors=[].
+Native readback: both paused, 900-second polling, Google connection<GOOGLE_SHEETS_CONNECTION_ID> statusok, no module issues, two modules each.
+Saved module config equals the exact create config for both modules in both scenarios (recursive key-order-independent comparison passed).
+The 11 body lines preserve source columns B:L; receivedAt preserves A. No renamed-header mappings used.
+No /data/cursor selected. Sole creation warning requires owner choice before activation; do not use default blindly.
+Previous availability scenario<LEGACY_FORM_SCENARIO_ID> remainspaused. No scenario run, Sheets/Form write, real-response ingestion, website edit or email send performed by this task.
+This verifies saved configuration, not runtime row output. Real A:L bundle and cursorAll remain future live checks after authorization.

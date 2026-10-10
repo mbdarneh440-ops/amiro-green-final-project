@@ -1,0 +1,78 @@
+{
+  "demo": true,
+  "description": "أمثلة صناعية للعرض الأكاديمي؛ ليست طلبات عملاء حقيقيين",
+  "records": [
+    {
+      "key": "gmail:demo-request-001",
+      "data": {
+        "sourceId": "gmail:demo-request-001",
+        "requesterName": "عميل تجريبي أ",
+        "sender": "demo.customer.a@example.com",
+        "subject": "مثال صناعي — طلب حراس لحفل",
+        "body": "נתונים מלאכותיים להדגמה בלבד.\nשמי לקוח הדגמה א.\nטלפון: 0500000000\nארגון: חברת הדגמה\nאנחנו מבקשים 2 מאבטחים לחגיגה באולם הדגמה.\nתאריך התחלה: 12/10/2026\nתאריך סיום: 12/10/2026\nשעות: 18:00 עד 23:00\nתעריף: 75 ₪ לשעה.",
+        "receivedAt": "2026-10-04T09:00:00+03:00",
+        "ackState": "received",
+        "extraction": {
+          "request_type": "new_request",
+          "contact_name": "לקוח הדגמה א",
+          "contact_phone": "0500000000",
+          "organization": "חברת הדגמה",
+          "site": "אולם הדגמה",
+          "request_summary": "אנחנו מבקשים 2 מאבטחים לחגיגה באולם הדגמה.",
+          "start_date": "2026-10-12",
+          "end_date": "2026-10-12",
+          "start_time": "18:00",
+          "end_time": "23:00",
+          "guard_count": "2",
+          "hourly_rate": "75",
+          "is_automated": false,
+          "source_evidence": {
+            "contact_name": "שמי לקוח הדגמה א.",
+            "contact_phone": "טלפון: 0500000000",
+            "organization": "ארגון: חברת הדגמה",
+            "site": "אנחנו מבקשים 2 מאבטחים לחגיגה באולם הדגמה.",
+            "request_summary": "אנחנו מבקשים 2 מאבטחים לחגיגה באולם הדגמה.",
+            "start_date": "תאריך התחלה: 12/10/2026",
+            "end_date": "תאריך סיום: 12/10/2026",
+            "start_time": "שעות: 18:00 עד 23:00",
+            "end_time": "שעות: 18:00 עד 23:00",
+            "guard_count": "אנחנו מבקשים 2 מאבטחים לחגיגה באולם הדגמה.",
+            "hourly_rate": "תעריף: 75 ₪ לשעה."
+          }
+        }
+      }
+    },
+    {
+      "key": "gmail:demo-request-002",
+      "data": {
+        "sourceId": "gmail:demo-request-002",
+        "requesterName": "عميل تجريبي ب",
+        "sender": "demo.customer.b@example.com",
+        "subject": "مثال صناعي — استفسار عن خدمة لمناسبة",
+        "body": "بيانات صناعية للعرض فقط. أريد الاستفسار عن حراسة لمناسبة. لم أحدد رقم الهاتف أو التاريخ بعد.",
+        "receivedAt": "2026-10-04T10:00:00+03:00",
+        "ackState": "received"
+      }
+    },
+    {
+      "key": "gmail:demo-request-003",
+      "data": {
+        "sourceId": "gmail:demo-request-003",
+        "sender": "demo.customer.c@example.com",
+        "subject": "مثال صناعي — تعديل عدد الحراس",
+        "body": "נתונים מלאכותיים בלבד. נא לשנות ל-3 מאבטחים. שאר הפרטים לא מצוינים בהודעה הזאת.",
+        "receivedAt": "2026-10-04T11:00:00+03:00",
+        "ackState": "received",
+        "extraction": {
+          "request_type": "update",
+          "request_summary": "נא לשנות ל-3 מאבטחים.",
+          "guard_count": "3",
+          "source_evidence": {
+            "request_summary": "נא לשנות ל-3 מאבטחים.",
+            "guard_count": "נא לשנות ל-3 מאבטחים."
+          }
+        }
+      }
+    }
+  ]
+}

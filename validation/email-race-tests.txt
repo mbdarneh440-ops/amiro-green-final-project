@@ -1,0 +1,31 @@
+✓ Grounded free-text Hebrew becomes pending with original source, timestamp and entity, without operational changes
+✓ Absent or malformed AI preserves raw pending data without granting approvals or legacy parsed facts
+✓ Facts require matching evidence; wrong dates, counts, currency and signs never masquerade as valid values
+✓ Explicit missing or conflicting fields clear even otherwise grounded suggestions
+✓ Dotted dates and unrelated words cannot supply time or currency evidence
+✓ Multi-day evidence persists and backend blocks approval even after save, while a representable overnight is accepted
+✓ Request kind never selects or changes an existing site automatically
+✓ JSON-only extraction and maximum provider IDs survive the canonical make namespace
+✓ Intake and legacy Make pull share source dedupe without resetting reviewed requests
+✓ A reused Gmail ID with different raw content rejects without overwrite
+✓ CAS retries preserve another writer changes and deduplicate simultaneous imports
+✓ A concurrent writer importing this Gmail ID wins with its durable identity
+✓ There is no receipt before durable commit, after DB failure, or after exhausted CAS retries
+✓ Authentication checks a separate server secret and the API can only write its configured existing owner
+✓ The endpoint rejects invalid timestamps, oversized UTF-8 bodies and wrong content types before writes
+✓ Transient D1 route failures return 503 and acknowledgement input failures return 400
+✓ Lost intake responses remain recoverable, and simultaneous acknowledgement reservations permit one sender
+✓ Acknowledgement sent retries are idempotent, wrong reservations fail, and uncertain sends are never automatically reopened
+✓ Unrelated mail is retained for review without requesting an automatic acknowledgement
+✓ Production contact_phone and is_automated JSON fields survive pull under make:gmail: IDs, while automation and unrelated approvals stay blocked
+✓ A deferred background refresh cannot overwrite a newly opened modal, inline settings edit, or newer save
+✓ Original manual structured import and Make datastore extraction fields both remain usable
+✓ Named contacts and exact request excerpts preserve the original Gmail display name separately from the organization
+✓ Names and summaries without matching body quotes remain blank, while source header names never become inferred body contacts
+✓ Legacy extraction without name or summary remains valid, and absent phone or evidence never fabricates contact data
+✓ Edited contact labels and descriptions survive manager review without changing original sender identity or replacing organization
+✓ Requester headers survive Make datastore pull and collisions never replace the already stored sender name
+✓ Gmail pull waits for delayed extraction before its import-once identity is recorded, and preserves manager review
+✓ Completed malformed extraction stays pending for manual review, while legacy non-Gmail records remain importable
+✓ A full page awaiting extraction does not hide a completed Gmail record on the next page
+30 email intake tests passed.

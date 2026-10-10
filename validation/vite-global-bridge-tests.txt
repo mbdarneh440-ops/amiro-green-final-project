@@ -1,0 +1,1 @@
+Actual virtual module evaluated by installed Vite: shared server binding identity and missing-launcher guard passed. No server started.

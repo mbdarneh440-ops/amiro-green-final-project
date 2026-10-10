@@ -1,0 +1,24 @@
+# Local settings and credentials in every nested project
+**/.env*
+!**/.env.example
+**/.dev.vars*
+**/node_modules/
+**/.wrangler/
+**/.sites-runtime/
+**/.next/
+**/.vinext/
+**/dist/
+**/.codex/
+**/.agents/
+**/data-live/
+**/requests.json
+**/requests.csv
+**/requests.xlsx
+**/*.sqlite*
+**/*.db
+**/*.log
+**/*.tsbuildinfo
+**/*.pem
+**/*.key
+**/coverage/
+.DS_Store

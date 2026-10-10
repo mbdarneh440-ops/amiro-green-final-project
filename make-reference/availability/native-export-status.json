@@ -1,0 +1,73 @@
+{
+  "OWNER_HANDOFF_REFERENCE": true,
+  "NOT_DIRECTLY_IMPORTABLE": true,
+  "notice": "Account, connection, scenario, datastore and form IDs are placeholders. Configure and authorize the owner connections before any future use; keep inactive until runtime verification.",
+  "reference": {
+    "checkedDate": "2026-10-04",
+    "nativeUiBlueprintFilesProduced": 0,
+    "importabilityConfirmed": false,
+    "browserAttempt": {
+      "scenarioId": "<UNARMED_AVAILABILITY_SCENARIO_ID>",
+      "result": "Make Sign in page; no authenticated browser session; no credentials entered",
+      "urlClass": "https://www.make.com/en/login"
+    },
+    "availableToolContract": {
+      "dedicatedRawBlueprintOrExportTool": false,
+      "scenario_get": "Normalized scenario structure, flow order, filters, schedules and connection health; no native UI export file",
+      "scenario_module_get": "Saved module config domains, not complete native UI blueprint",
+      "scenario_create": "Flat module-list input accepted by Make connector; this contract does not guarantee acceptance by Make UI Import blueprint",
+      "template_get": "Format explicitly accepted by scenario_create, not documented as UI import format"
+    },
+    "nativeUiExportNeededForAccountTransfer": true,
+    "officialSource": "https://help.make.com/blueprints",
+    "referenceFilesClassification": "Design references only; native Make UI import unverified",
+    "actualScenarios": [
+      {
+        "id": "<UNARMED_AVAILABILITY_SCENARIO_ID>",
+        "name": "אמירו גרין — זמינות עובדים · ניהול א",
+        "teamId": "<TEAM_ID>",
+        "status": "paused",
+        "isLockedForEditing": false,
+        "isWaitingOnIncompleteExecutions": false,
+        "incompleteExecutions": 0,
+        "lastEdit": "2026-10-04T17:06:07.649Z",
+        "scheduling": {
+          "type": "indefinitely",
+          "interval": 900
+        }
+      },
+      {
+        "id": "<ARMED_AVAILABILITY_SCENARIO_ID>",
+        "name": "אמירו גרין — זמינות עובדים · ניהול ב",
+        "teamId": "<TEAM_ID>",
+        "status": "paused",
+        "isLockedForEditing": false,
+        "isWaitingOnIncompleteExecutions": false,
+        "incompleteExecutions": 0,
+        "lastEdit": "2026-10-04T17:06:16.381Z",
+        "scheduling": {
+          "type": "indefinitely",
+          "interval": 900
+        }
+      },
+      {
+        "id": "<SCENARIO_ID>",
+        "name": "אמירו גרין — בקשות Gmail ומענה בעברית",
+        "teamId": "<TEAM_ID>",
+        "status": "paused",
+        "isLockedForEditing": false,
+        "isWaitingOnIncompleteExecutions": false,
+        "incompleteExecutions": 0,
+        "lastEdit": "2026-10-04T15:56:54.462Z",
+        "scheduling": {
+          "type": "indefinitely",
+          "interval": 3600
+        }
+      }
+    ],
+    "providerMutations": 0,
+    "scenarioRuns": 0,
+    "activationChanges": 0,
+    "credentialsEntered": 0
+  }
+}

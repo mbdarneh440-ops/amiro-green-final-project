@@ -1,0 +1,11 @@
+{
+  "integrity": "passed",
+  "literalPhoneZero": "passed",
+  "numericDates": "passed",
+  "formulasOrErrors": 0,
+  "frozenHeadersAndIdentity": "passed",
+  "actualCustomerRows": 0,
+  "separateSyntheticDemoRows": 3,
+  "liveCalls": 0,
+  "workbook": "طلبات_الإيميل_جاهز_للتسليم.xlsx"
+}

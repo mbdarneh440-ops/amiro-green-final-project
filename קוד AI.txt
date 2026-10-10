@@ -1,0 +1,7 @@
+AI CODE — קוד עוזר האתר וחיבור הדפדפן
+
+source/components/assistant-panel.tsx: ממשק השיחה; שולח את השאלה אל /api/assistant.
+source/app/api/assistant/route.ts: קורא את AI_API_KEY מהגדרות השרת ושולח בקשה אל OpenAI Responses API. מתחיל בתשובות עזרה מקומיות. שירות OpenAI פועל רק כאשר AI_ENABLED=true ויש מפתח תקין.
+source/lib/assistant.ts: העזרה המקומית, הסתרת שמות, טלפונים ומזהים מוכרים מהשאלה החיצונית, וניתוח התשובה והמקורות.
+source/components/wardiya-app.tsx: חיבור אופציונלי ל-document.modelContext; הכלים הקיימים קוראים ספירות מסוכמות ופותחים את מסך הבדיקה כאשר הדפדפן תומך בכך.
+שיחת Codex שבה פותח הפרויקט נפרדת מעוזר האתר; הכלים הקיימים אינם מעניקים גישה קבועה לכל הפרויקט. שיבוץ המשמרות מתבצע באמצעות מנוע כללים ב-source/lib/domain.ts, ואישור המנהל נשאר שלב נפרד.

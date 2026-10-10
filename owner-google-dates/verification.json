@@ -1,0 +1,15 @@
+{
+  "checkedDate": "2026-10-04",
+  "mode": "offline_synthetic_only",
+  "googleCalls": 0,
+  "tests": [
+    "Syntax valid; dry-run/copy-confirmation/trigger defaults block mutations and trigger installation.",
+    "Jerusalem midnight boundary, year rollover, leap day and strict weekday/calendar validation passed.",
+    "Saturday/Sunday civil-week boundary and both sides of Jerusalem DST transitions preserve the correct seven-day week.",
+    "Unexpected appended columns and changed L2 formula fail closed; native write sites restricted to setRows and E1:K1.",
+    "Missing owner IDs and a mismatched form destination stop inspection before sheet access or writes."
+  ],
+  "limitations": [
+    "Native Forms→Sheets rename behavior and real OAuth/trigger execution remain untested."
+  ]
+}

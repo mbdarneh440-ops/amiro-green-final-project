@@ -1,0 +1,3 @@
+scripts/start-local.mjs: 5 normalized cwd cases passed, including reproduced EPERM guard
+scripts/start-node-server.mjs: 5 normalized cwd cases passed, including reproduced EPERM guard
+Existing matching server-only environment bridge preserved

@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-10-10T09:25:15Z",
+  "productionAutomationInactive": true,
+  "scenarios": [
+    {"id": 7764136, "status": "inactive", "trigger": "polling"},
+    {"id": 7766422, "status": "inactive", "trigger": "polling"},
+    {"id": 7766424, "status": "inactive", "trigger": "polling"}
+  ],
+  "scope": "Manual synthetic Make demonstration only; no production scenario was run."
+}

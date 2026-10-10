@@ -1,0 +1,11 @@
+{
+  "description": "دليل أسماء المدخلات فقط؛ لا يقرأ المساعد هذا الملف ولا توضع فيه مفاتيح",
+  "companyMailbox": "",
+  "makeToken": "",
+  "dataStoreId": "",
+  "zone": "eu1.make.com",
+  "aiKey": "",
+  "aiModel": "",
+  "MAKE_SYNC_ENABLED": false,
+  "AI_ENABLED": false
+}

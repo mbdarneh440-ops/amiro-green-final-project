@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {seed} from '../lib/domain';
+import {localHelp,parseResponse,externalQuestion} from '../lib/assistant';
+const state=seed();state.guards[0].name='עובד בדיקה';state.guards[0].phone='0501234567';
+const before=JSON.stringify(state);
+assert.match(localHelp('פרטים על עובד בדיקה',state)!.answer,/0501234567/);
+assert.equal(localHelp('איך בונים סידור עבודה?',state)?.view,'schedule');
+assert.equal(JSON.stringify(state),before);
+assert.equal(localHelp('מה מזג האוויר בחיפה?',state),null);
+assert.ok(!externalQuestion('שאלה עבור עובד בדיקה 0501234567',state).includes('0501234567'));
+const result=parseResponse({output:[{type:'web_search_call'},{type:'message',content:[{type:'output_text',text:'מידע [1]',annotations:[{type:'url_citation',start_index:5,end_index:8,url:'https://example.com/',title:'מקור'},{type:'url_citation',start_index:0,end_index:4,url:'javascript:alert(1)'}]},{type:'output_text',text:'עוד [2]',annotations:[{type:'url_citation',start_index:4,end_index:7,url:'https://example.org/'}]}]}]});
+assert.equal(result.mode,'web');assert.equal(result.citations.length,2);assert.equal(result.answer.slice(result.citations[1].start,result.citations[1].end),'[2]');
+assert.throws(()=>parseResponse({output:[]}));
+console.log('✓ עזרה מקומית ללא שינוי נתונים, השחרת פרטים, ציטוטים וקישורים תקינים');

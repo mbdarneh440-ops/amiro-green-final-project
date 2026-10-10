@@ -1,0 +1,28 @@
+{
+  "checkedDate": "2026-10-04",
+  "operationScope": "Local source applied; Make drafts created and saved inactive; no real form submission",
+  "preparedPatchApplied": true,
+  "currentSiteUsesNewFormLinks": true,
+  "currentSiteCheckboxDatedImportSupported": true,
+  "automaticPendingQueueImplemented": true,
+  "localAutomaticSyncEnabled": false,
+  "availabilityScenarioIds": [
+    "<UNARMED_AVAILABILITY_SCENARIO_ID>",
+    "<ARMED_AVAILABILITY_SCENARIO_ID>"
+  ],
+  "availabilityScenariosActive": false,
+  "legacyScenarioId": "<LEGACY_FORM_SCENARIO_ID>",
+  "legacyScenarioActive": false,
+  "dataStoreId": "<DATASTORE_ID>",
+  "source": "<ORIGINAL_SOURCE_CHECKOUT>",
+  "automaticSitePollSeconds": 30,
+  "makeWatchRowsIntervalSeconds": 900,
+  "approvalsRequired": [
+    "availability",
+    "customer request",
+    "work schedule"
+  ],
+  "realEndToEndResponseVerified": false,
+  "nativeUiBlueprintExportAvailable": false,
+  "report": "outputs/03_forms-connection-check.md"
+}

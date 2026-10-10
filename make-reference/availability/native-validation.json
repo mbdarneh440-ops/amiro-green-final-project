@@ -1,0 +1,404 @@
+{
+  "OWNER_HANDOFF_REFERENCE": true,
+  "NOT_DIRECTLY_IMPORTABLE": true,
+  "notice": "Account, connection, scenario, datastore and form IDs are placeholders. Configure and authorize the owner connections before any future use; keep inactive until runtime verification.",
+  "reference": {
+    "checkedDate": "2026-10-04",
+    "organizationId": "<ORGANIZATION_ID>",
+    "teamId": "<TEAM_ID>",
+    "zone": "eu1.make.com",
+    "scenarios": [
+      {
+        "group": "unarmed",
+        "scenarioId": "<UNARMED_AVAILABILITY_SCENARIO_ID>",
+        "url": "https://eu1.make.com/<TEAM_ID>/scenarios/<UNARMED_AVAILABILITY_SCENARIO_ID>/edit",
+        "spreadsheetId": "<UNARMED_SHEET_ID>",
+        "tabGidForReference": 849812451,
+        "create": {
+          "content": [
+            {
+              "type": "text",
+              "text": "The scenario was created switched off. Activate it with `scenario_activate` when the user is ready for it to start running."
+            }
+          ],
+          "structuredContent": {
+            "scenarioId": "<UNARMED_AVAILABILITY_SCENARIO_ID>",
+            "name": "אמירו גרין — זמינות עובדים · ניהול א",
+            "isActive": false,
+            "lastEdit": "2026-10-04T17:06:07.649Z",
+            "errors": [],
+            "warnings": [
+              {
+                "moduleId": 1,
+                "message": "ACTION REQUIRED before activating: this trigger chooses where to start reading from — everything, or only new items — and no choice is recorded, so it will use its default. Ask the user which they meant; on a busy source, the default can replay a lot of unwanted history."
+              }
+            ]
+          },
+          "isError": false
+        },
+        "readback": {
+          "status": "fulfilled",
+          "value": {
+            "content": [],
+            "structuredContent": {
+              "scenario": {
+                "id": "<UNARMED_AVAILABILITY_SCENARIO_ID>",
+                "name": "אמירו גרין — זמינות עובדים · ניהול א",
+                "teamId": "<TEAM_ID>",
+                "status": "paused",
+                "isLockedForEditing": false,
+                "isWaitingOnIncompleteExecutions": false,
+                "incompleteExecutions": 0,
+                "lastEdit": "2026-10-04T17:06:07.649Z"
+              },
+              "trigger": {
+                "moduleId": 1,
+                "module": "google-sheets:watchRows",
+                "kind": "polling",
+                "scheduling": {
+                  "type": "indefinitely",
+                  "interval": 900
+                }
+              },
+              "modules": [
+                {
+                  "id": 1,
+                  "module": "google-sheets:watchRows",
+                  "version": 2,
+                  "label": "תשובות זמינות · ניהול א",
+                  "root": "main"
+                },
+                {
+                  "id": 2,
+                  "module": "datastore:AddRecord",
+                  "version": 1,
+                  "label": "שמירת זמינות לבדיקה — ללא אישור אוטומטי",
+                  "follows": 1,
+                  "filter": {
+                    "name": "תשובת טופס עם חותמת זמן",
+                    "conditions": [
+                      [
+                        {
+                          "a": "{{1.`0`}}",
+                          "o": "exist"
+                        },
+                        {
+                          "a": "{{1.`0`}}",
+                          "b": "",
+                          "o": "text:notequal"
+                        }
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "connections": [
+                {
+                  "id": "<GOOGLE_SHEETS_CONNECTION_ID>",
+                  "label": "Student Test's (student-test@example.test) Google credentials - MCP",
+                  "app": "google",
+                  "usedByModules": [
+                    1
+                  ],
+                  "status": "ok"
+                }
+              ]
+            },
+            "isError": false
+          }
+        },
+        "modules": {
+          "status": "fulfilled",
+          "value": {
+            "content": [],
+            "structuredContent": {
+              "modules": [
+                {
+                  "id": 1,
+                  "module": "google-sheets:watchRows",
+                  "version": 2,
+                  "config": {
+                    "parameters": {
+                      "from": "drive",
+                      "mode": "select",
+                      "limit": 100,
+                      "sheetId": "Form Responses 1",
+                      "__IMTCONN__": "<GOOGLE_SHEETS_CONNECTION_ID>",
+                      "spreadsheetId": "<UNARMED_SHEET_ID>",
+                      "tableFirstRow": "A1:L1",
+                      "includesHeaders": true,
+                      "valueRenderOption": "FORMATTED_VALUE",
+                      "dateTimeRenderOption": "FORMATTED_STRING"
+                    },
+                    "mapper": {}
+                  }
+                },
+                {
+                  "id": 2,
+                  "module": "datastore:AddRecord",
+                  "version": 1,
+                  "config": {
+                    "parameters": {
+                      "datastore": "<DATASTORE_ID>"
+                    },
+                    "mapper": {
+                      "key": "availability:<UNARMED_SHEET_ID>:{{1.`__ROW_NUMBER__`}}",
+                      "data": {
+                        "body": "שם מלא: {{1.`1`}}\nמספר טלפון: {{1.`2`}}\nתאריך תחילת השבוע (יום ראשון): {{1.`3`}}\nיום ראשון: {{1.`4`}}\nיום שני: {{1.`5`}}\nיום שלישי: {{1.`6`}}\nיום רביעי: {{1.`7`}}\nיום חמישי: {{1.`8`}}\nיום שישי: {{1.`9`}}\nיום שבת: {{1.`10`}}\nשבוע אוטומטי: {{1.`11`}}",
+                        "sender": "Google Forms",
+                        "subject": "זמינות שבועית · א",
+                        "sourceId": "availability:<UNARMED_SHEET_ID>:{{1.`__ROW_NUMBER__`}}",
+                        "receivedAt": "{{1.`0`}}",
+                        "requestType": "availability.unarmed",
+                        "requesterName": "{{1.`1`}}"
+                      },
+                      "overwrite": true
+                    }
+                  }
+                }
+              ]
+            },
+            "isError": false
+          }
+        }
+      },
+      {
+        "group": "armed",
+        "scenarioId": "<ARMED_AVAILABILITY_SCENARIO_ID>",
+        "url": "https://eu1.make.com/<TEAM_ID>/scenarios/<ARMED_AVAILABILITY_SCENARIO_ID>/edit",
+        "spreadsheetId": "<ARMED_SHEET_ID>",
+        "tabGidForReference": 1330052281,
+        "create": {
+          "content": [
+            {
+              "type": "text",
+              "text": "The scenario was created switched off. Activate it with `scenario_activate` when the user is ready for it to start running."
+            }
+          ],
+          "structuredContent": {
+            "scenarioId": "<ARMED_AVAILABILITY_SCENARIO_ID>",
+            "name": "אמירו גרין — זמינות עובדים · ניהול ב",
+            "isActive": false,
+            "lastEdit": "2026-10-04T17:06:16.381Z",
+            "errors": [],
+            "warnings": [
+              {
+                "moduleId": 1,
+                "message": "ACTION REQUIRED before activating: this trigger chooses where to start reading from — everything, or only new items — and no choice is recorded, so it will use its default. Ask the user which they meant; on a busy source, the default can replay a lot of unwanted history."
+              }
+            ]
+          },
+          "isError": false
+        },
+        "readback": {
+          "status": "fulfilled",
+          "value": {
+            "content": [],
+            "structuredContent": {
+              "scenario": {
+                "id": "<ARMED_AVAILABILITY_SCENARIO_ID>",
+                "name": "אמירו גרין — זמינות עובדים · ניהול ב",
+                "teamId": "<TEAM_ID>",
+                "status": "paused",
+                "isLockedForEditing": false,
+                "isWaitingOnIncompleteExecutions": false,
+                "incompleteExecutions": 0,
+                "lastEdit": "2026-10-04T17:06:16.381Z"
+              },
+              "trigger": {
+                "moduleId": 1,
+                "module": "google-sheets:watchRows",
+                "kind": "polling",
+                "scheduling": {
+                  "type": "indefinitely",
+                  "interval": 900
+                }
+              },
+              "modules": [
+                {
+                  "id": 1,
+                  "module": "google-sheets:watchRows",
+                  "version": 2,
+                  "label": "תשובות זמינות · ניהול ב",
+                  "root": "main"
+                },
+                {
+                  "id": 2,
+                  "module": "datastore:AddRecord",
+                  "version": 1,
+                  "label": "שמירת זמינות לבדיקה — ללא אישור אוטומטי",
+                  "follows": 1,
+                  "filter": {
+                    "name": "תשובת טופס עם חותמת זמן",
+                    "conditions": [
+                      [
+                        {
+                          "a": "{{1.`0`}}",
+                          "o": "exist"
+                        },
+                        {
+                          "a": "{{1.`0`}}",
+                          "b": "",
+                          "o": "text:notequal"
+                        }
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "connections": [
+                {
+                  "id": "<GOOGLE_SHEETS_CONNECTION_ID>",
+                  "label": "Student Test's (student-test@example.test) Google credentials - MCP",
+                  "app": "google",
+                  "usedByModules": [
+                    1
+                  ],
+                  "status": "ok"
+                }
+              ]
+            },
+            "isError": false
+          }
+        },
+        "modules": {
+          "status": "fulfilled",
+          "value": {
+            "content": [],
+            "structuredContent": {
+              "modules": [
+                {
+                  "id": 1,
+                  "module": "google-sheets:watchRows",
+                  "version": 2,
+                  "config": {
+                    "parameters": {
+                      "from": "drive",
+                      "mode": "select",
+                      "limit": 100,
+                      "sheetId": "Form Responses 1",
+                      "__IMTCONN__": "<GOOGLE_SHEETS_CONNECTION_ID>",
+                      "spreadsheetId": "<ARMED_SHEET_ID>",
+                      "tableFirstRow": "A1:L1",
+                      "includesHeaders": true,
+                      "valueRenderOption": "FORMATTED_VALUE",
+                      "dateTimeRenderOption": "FORMATTED_STRING"
+                    },
+                    "mapper": {}
+                  }
+                },
+                {
+                  "id": 2,
+                  "module": "datastore:AddRecord",
+                  "version": 1,
+                  "config": {
+                    "parameters": {
+                      "datastore": "<DATASTORE_ID>"
+                    },
+                    "mapper": {
+                      "key": "availability:<ARMED_SHEET_ID>:{{1.`__ROW_NUMBER__`}}",
+                      "data": {
+                        "body": "שם מלא: {{1.`1`}}\nמספר טלפון: {{1.`2`}}\nתאריך תחילת השבוע (יום ראשון): {{1.`3`}}\nיום ראשון: {{1.`4`}}\nיום שני: {{1.`5`}}\nיום שלישי: {{1.`6`}}\nיום רביעי: {{1.`7`}}\nיום חמישי: {{1.`8`}}\nיום שישי: {{1.`9`}}\nיום שבת: {{1.`10`}}\nשבוע אוטומטי: {{1.`11`}}",
+                        "sender": "Google Forms",
+                        "subject": "זמינות שבועית · ב",
+                        "sourceId": "availability:<ARMED_SHEET_ID>:{{1.`__ROW_NUMBER__`}}",
+                        "receivedAt": "{{1.`0`}}",
+                        "requestType": "availability.armed",
+                        "requesterName": "{{1.`1`}}"
+                      },
+                      "overwrite": true
+                    }
+                  }
+                }
+              ]
+            },
+            "isError": false
+          }
+        }
+      }
+    ],
+    "oldScenarioReadback": {
+      "status": "fulfilled",
+      "value": {
+        "content": [],
+        "structuredContent": {
+          "scenario": {
+            "id": "<LEGACY_FORM_SCENARIO_ID>",
+            "name": "ורדיה — זמינות שבועית מ-Google Sheets",
+            "teamId": "<TEAM_ID>",
+            "status": "paused",
+            "isLockedForEditing": false,
+            "isWaitingOnIncompleteExecutions": false,
+            "incompleteExecutions": 0,
+            "lastEdit": "2026-09-25T08:05:25.724Z"
+          },
+          "trigger": {
+            "moduleId": 1,
+            "module": "google-sheets:watchRows",
+            "kind": "polling",
+            "scheduling": {
+              "type": "indefinitely",
+              "interval": 900
+            }
+          },
+          "modules": [
+            {
+              "id": 1,
+              "module": "google-sheets:watchRows",
+              "version": 2,
+              "root": "main"
+            },
+            {
+              "id": 2,
+              "module": "datastore:AddRecord",
+              "version": 1,
+              "follows": 1
+            }
+          ],
+          "connections": [
+            {
+              "id": "<GOOGLE_SHEETS_CONNECTION_ID>",
+              "label": "Student Test's (student-test@example.test) Google credentials - MCP",
+              "app": "google",
+              "usedByModules": [
+                1
+              ],
+              "status": "ok"
+            }
+          ]
+        },
+        "isError": false
+      }
+    },
+    "validation": {
+      "nativeCreateErrors": 0,
+      "nativeReadbackStatus": "paused",
+      "isActive": false,
+      "scheduleSeconds": 900,
+      "connectionId": "<GOOGLE_SHEETS_CONNECTION_ID>",
+      "connectionStatus": "ok",
+      "schemaId": "<DATASTRUCTURE_ID>",
+      "sharedStoreId": "<DATASTORE_ID>",
+      "modulesPerScenario": 2,
+      "rawWeekPreserved": true,
+      "automaticWeekPreserved": true,
+      "sheetsWrites": 0,
+      "formWrites": 0,
+      "scenarioRuns": 0,
+      "emailSends": 0,
+      "siteEdits": 0,
+      "realRowMappingVerified": false,
+      "cursor": "not selected intentionally; owner must choose before activation"
+    },
+    "requiredBeforeActivation": [
+      "Owner chooses whether to import existing items and future items or only future items; intended no-loss setup is All when explicitly authorized.",
+      "Verify a real response's zero-based fields and formatted timestamp/automatic week after permission to run.",
+      "Review quota and successful durable record before enabling the site pull loop."
+    ],
+    "limitations": [
+      "Watch New Rows does not observe edits to existing response rows.",
+      "An existing-row replay overwrites the same datastore key; site fingerprint/review ledger must handle changed payload without silently treating it as already reviewed.",
+      "No live end-to-end response was run."
+    ]
+  }
+}

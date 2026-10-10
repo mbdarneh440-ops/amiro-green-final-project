@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "updatedDate": "2026-10-10",
+  "studentName": "מוחמד בדארנה",
+  "baselineFileCount": 233,
+  "baselineCatalogSha256": "b131005144d82f88de9383fb0846acf5b70615e997184f7dbcf19c511604ea26",
+  "syntheticDataOnly": true,
+  "facts": {
+    "gitHubPublished": false,
+    "formsEndToEndVerified": false,
+    "recordingComplete": false,
+    "siteImportVerified": false,
+    "scheduleApprovalVerified": false,
+    "submittedToMoodle": false,
+    "reportComplete": false,
+    "scheduleDraftVerified": false,
+    "presentationComplete": false,
+    "managerReviewVerified": false,
+    "makeRunVerified": true,
+    "makeExecuted": true,
+    "gmailEndToEndVerified": false,
+    "productionAutomationInactive": true
+  },
+  "evidence": {
+    "scenarioId": 7875039,
+    "executionId": "b32572cec6654ca6a3885037b723d5db",
+    "executionStartedAt": "2026-10-10T08:56:06.835Z",
+    "executionDurationMs": 6472,
+    "executionCredits": 5.89,
+    "redactedEvidenceFile": "validation/בדיקת Make AI חיה.json",
+    "makeScreenshot": "evidence/צילום Make — הרצה אמיתית.png",
+    "productionInactiveEvidence": "validation/אימות תרחישי חברה מושהים.json",
+    "scope": "Manual synthetic text → Make AI → JSON → test data store only; website, Gmail, Forms and recording not verified"
+  },
+  "repositoryUrl": null,
+  "modifiedFiles": [
+    {
+      "path": "source/vite.config.ts",
+      "previousSha256": "4b9d8a6b14fd155328847bc6cd063c6bf44c58c64de8d46911cdf0ede611e367",
+      "currentSha256": "f085c2630c4ef465e756d4e0afdffc8b35b8353d2ac6a13fc310d19af3eac02f"
+    },
+    {
+      "path": "source/build/local-node-bindings-plugin.ts",
+      "previousSha256": null,
+      "currentSha256": "a765d76d1471433499db34169c0b4eb95625fe8c086ea976188578517374931b"
+    },
+    {
+      "path": "source/lib/make.ts",
+      "previousSha256": "b8b709412f436e7179f995b0eea6e9e359c82e81df9de9aa56f7f35b79d6c256",
+      "currentSha256": "f751c3ffbdb66f2e46cbcfeec6fcbf4b3d0857f1feb9e22c719bd99dd7598605"
+    },
+    {
+      "path": "source/scripts/local-node-runtime.mjs",
+      "previousSha256": null,
+      "currentSha256": "995df252b2c6e55b738b1e06f8e42f1b47007792e7a714d58de30aefa2da134c"
+    },
+    {
+      "path": "source/scripts/start-local.mjs",
+      "previousSha256": "b215f28ebcb133661856ddb8ca83d77dcc359e048661dbab661bfce1a74b1b01",
+      "currentSha256": "002a097a231fa6ba23bb1a272687ba4857c98a2d8ae83773235929e4f4719e83"
+    },
+    {
+      "path": "source/scripts/start-node-server.mjs",
+      "previousSha256": null,
+      "currentSha256": "82f584f4b540b11a1343a17431abee4be54caee98e02dad56110715c4e1b548b"
+    },
+    {
+      "path": "source/tests/email-intake.test.ts",
+      "previousSha256": "5de58ff99c32e68269216be5cbd8faedd1c72450f8639dd72066c1767be0b1d4",
+      "currentSha256": "d25a56e5578c5ab38562bb0b2b5449bfe7c774b83104cbd981f06e690c92b68d"
+    },
+    {
+      "path": "source/tests/local-node-runtime.test.mjs",
+      "previousSha256": null,
+      "currentSha256": "601668dd27e93cce007bf3a44f53de9717a3ce8dac47c729826f7e54290b9889"
+    },
+    {
+      "path": "README.md",
+      "previousSha256": "591df1f8318e0b43c9c1fd2288e39cd9e7644cb9e0d32eb0a428d5c4163e7da8",
+      "currentSha256": "7e0bbb4879ea914ae365dedbcdf83fc6c48bfe04537b7406ed5fcf12792adcb3"
+    },
+    {
+      "path": "מדריך הגשה.txt",
+      "previousSha256": "6173d2f920e6dfff0770b9a0bef4fea6ebe8fc3f0151553bde196ee8fb9a48fb",
+      "currentSha256": "1e60631d4749f7dfe2593da8890552f83a9b61d0a3815a1cb26b17f18ef63e35"
+    },
+    {
+      "path": "מפת דרישות והשלמות.md",
+      "previousSha256": "ba072f61f9faa89e0e10c014b71487466b7b486d43e91d5c390bb72b99cbde76",
+      "currentSha256": "3240a97f2d25d37c46593a9a3e8154e8f0111b0df6df4efd393c505b3f455b67"
+    },
+    {
+      "path": "submission/מוחמד בדארנה - אמירו גרין - מסמך פרויקט.md",
+      "previousSha256": "61d250f3648c039ef0dece9588bdf8b18956b92d4343fa977d341580f0c085b3",
+      "currentSha256": "c795c5911ec0db5c3a0eb5437241014c5866eab5aa5930ef406728099c503d76"
+    },
+    {
+      "path": "submission/מוחמד בדארנה - אמירו גרין - אפיון PRD.md",
+      "previousSha256": "38a3044ba9845cc0a5dce94d28bbebe534ebe3c19fa9d0b5cfed1bf6a6dd6b0d",
+      "currentSha256": "1727d3398ae25b289b81a50084e82841ac598e34381f7ef3f3bd2406126a0842"
+    },
+    {
+      "path": "validation/בדיקת Make AI חיה.json",
+      "previousSha256": null,
+      "currentSha256": "45c199e509660d93656028a8b5655d579fa02a52bfabd379ff0788c9494ad4b5"
+    },
+    {
+      "path": "evidence/צילום Make — הרצה אמיתית.png",
+      "previousSha256": null,
+      "currentSha256": "89d75a862ac812ec2231d788ef2d1d02bc365d67cdbceeaf7381e6b1e98e355b"
+    },
+    {
+      "path": "validation/אימות תרחישי חברה מושהים.json",
+      "previousSha256": null,
+      "currentSha256": "687e68b61bba8537677c193550385c64ad78fddee3657501160736cee9566e75"
+    },
+    {
+      "path": "submission/מוחמד בדארנה - אמירו גרין - מצגת טיוטה.pdf",
+      "previousSha256": "9b3fc1cdb9d99e02dedd81a879dfe885208670cd27436fa13f1e0bf4932176d4",
+      "currentSha256": "8324ee7b968aac63fb25ded4b845b97e1d68ba1983339e793513fce176ce20f8"
+    },
+    {
+      "path": "validation/אימות עימוד מצגת.json",
+      "previousSha256": null,
+      "currentSha256": "4795c46d29543265f156f2559390d06f80b30fe4b27d670a1ea55f80f5946272"
+    },
+    {
+      "path": "validation/email-race-tests.txt",
+      "previousSha256": null,
+      "currentSha256": "9d299997c12cdc181763aa59bbeabb684bddbeb81fb3dc9e0a0c7b7c55fe41ab"
+    },
+    {
+      "path": "validation/email-race-typecheck.txt",
+      "previousSha256": null,
+      "currentSha256": "26a43da95e8c8749317d79e4e8a33b3e540c18caf94e0f01a6c78b5d31749cf7"
+    },
+    {
+      "path": "validation/local-node-runtime-tests.txt",
+      "previousSha256": null,
+      "currentSha256": "718cd7fd8e47a0c1088212119ce0971c12b808fa45dacae847833b57da101f9c"
+    },
+    {
+      "path": "validation/local-node-runtime-typecheck.txt",
+      "previousSha256": null,
+      "currentSha256": "4fb9db0045cda7d4bc0529cca0276fb1f0a27034e9a4fa4f0cef4ee4dca967c8"
+    },
+    {
+      "path": "validation/vite-global-bridge-tests.txt",
+      "previousSha256": null,
+      "currentSha256": "726aae6cde311d2d8e25141c6a1d17c074e627cbcd73e947290ee745ad701104"
+    },
+    {
+      "path": "validation/redundant-chdir-tests.txt",
+      "previousSha256": null,
+      "currentSha256": "bb9beed03b29fc5fd9036d3aacc23824a3555c8d8cb4bbac3f81790c2ede8af9"
+    },
+    {
+      "path": "make-reference/README.md",
+      "previousSha256": "64ff230111286ab79255831488c61f75cead847262f0322c184c9a15122d1f1e",
+      "currentSha256": "46d8eb8cc49494315010f35cc8fd5cd886e675a49154b649951d07978568c0f1"
+    },
+    {
+      "path": "make-reference/demo-scenario-reference.json",
+      "previousSha256": null,
+      "currentSha256": "8a9260986e355d8fb5e6d4da22a83422f45b7eb21354984f09476b29b7a54060"
+    },
+    {
+      "path": "make-reference/email-scenario-reference.json",
+      "previousSha256": "0cd3c17cda54e91051af9c11c8710f0f1ff49c2628d8806887ca8d8347f7eac2",
+      "currentSha256": "2bacbc2874948c814321487f5068dd32093245a2afa437125700c7717d0dfcb3"
+    },
+    {
+      "path": "מוחמד בדארנה - אמירו גרין - מסמך פרויקט.md",
+      "previousSha256": null,
+      "currentSha256": "c795c5911ec0db5c3a0eb5437241014c5866eab5aa5930ef406728099c503d76"
+    },
+    {
+      "path": "מוחמד בדארנה - אמירו גרין - אפיון PRD.md",
+      "previousSha256": null,
+      "currentSha256": "1727d3398ae25b289b81a50084e82841ac598e34381f7ef3f3bd2406126a0842"
+    },
+    {
+      "path": "מוחמד בדארנה - אמירו גרין - מצגת.pdf",
+      "previousSha256": null,
+      "currentSha256": "8324ee7b968aac63fb25ded4b845b97e1d68ba1983339e793513fce176ce20f8"
+    }
+  ],
+  "secretPatternScan": "passed",
+  "currentCatalog": "מפת הקבצים.json",
+  "zipVerification": "See sibling release-verification JSON; checked after creation"
+}

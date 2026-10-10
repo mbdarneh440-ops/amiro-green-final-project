@@ -1,0 +1,14 @@
+✔ owner parser handles safe quoted or plain values; AI and unknown settings are not propagated (0.9874ms)
+✔ inactive flag, missing mailbox, bad zone and missing credentials block launch (0.6173ms)
+✔ dotenv parsing rejects duplicate required fields, line injection and non-string JSON (0.3435ms)
+✔ watch plan uses local persistent folder and keeps credentials out of argv (0.2736ms)
+✔ runner arguments cannot accept a secret or implicitly enable a service (0.1466ms)
+✔ future chosen env is read only in an explicit fixture and respects inactive gate (6.8712ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 71.7058
