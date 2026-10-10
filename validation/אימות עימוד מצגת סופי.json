@@ -1,6 +1,32 @@
 {
-  "pages": 12,
+  "pages": 15,
   "textOverflow": [],
   "bidiEngine": "Windows ICU",
-  "source": "deck-proto.json"
+  "source": "mail-and-availability-evidence-expansion",
+  "pdfSha256": "1e602b48b789c3af7b6e5fe615ba46413160e72fdb388491c34e1d449ae5cf88",
+  "pdfBytes": 377154,
+  "visuallyReviewedPages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "allPagesRendered": true,
+  "screenshotFiles": [
+    "evidence/צילום Make — מסלול Gmail מושהה.jpg",
+    "evidence/צילום Make — זמינות עובדים א מושהה.jpg",
+    "evidence/צילום Make — זמינות עובדים ב מושהה.jpg"
+  ],
+  "scope": "Real paused Gmail/Forms diagrams and connection explanations; manual synthetic Make-to-site proof only; manager and recording remain unverified"
 }

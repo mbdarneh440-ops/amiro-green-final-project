@@ -2,7 +2,7 @@
   "name": "אמירו גרין — חבילת GitHub להגשה אקדמית",
   "updatedDate": "2026-10-10",
   "language": "he",
-  "fileCount": 259,
+  "fileCount": 262,
   "launcherRepair": "Dependency installation completed; vinext CLI readiness probe added.",
   "siteOpenedByUser": true,
   "liveServicesActivated": false,
@@ -598,8 +598,8 @@
       "purpose": "המדריך הראשי עם חיפוש בעברית.",
       "contents": "גישה מהירה למפעילים ולמסמכים, וכן שם, תפקיד ותוכן של כל קובץ בפרויקט.",
       "category": "התחילו כאן",
-      "bytes": 120951,
-      "sha256": "1ce06d5edfc2b82601d4682c84bf62e51ee3477a16664d466d0f06884ea2e4ed"
+      "bytes": 122905,
+      "sha256": "00a6f26c970f73ee82c44db1a9cf5d4808b1c44b2a7d60f9209c2c7231808430"
     },
     {
       "path": "חיבור Make.txt",
@@ -630,8 +630,8 @@
       "purpose": "מדריך מלא לכל הקבצים בטקסט.",
       "contents": "לכל קובץ: נתיב, תפקיד ותוכן, מסודרים לפי קטגוריות.",
       "category": "התחילו כאן",
-      "bytes": 75238,
-      "sha256": "e3f3000db3058ed9bd5f71ed17c89fdb792ba82e1d2688af257d6315aa8c78f6"
+      "bytes": 75303,
+      "sha256": "a1691db4bc38543235988776446e0f8f9c56d93a47ff7d34e1fcb29a94379a2b"
     },
     {
       "path": "מפת הקבצים.json",
@@ -742,8 +742,8 @@
       "purpose": "מדריך חומרי העזר והגדרת החיבורים ב-Make.",
       "contents": "הדגמה ידנית, מסלול Gmail מושהה, מצייני מקום והבדלה מ-blueprint רשמי.",
       "category": "חומרי עזר ל-Make",
-      "bytes": 5932,
-      "sha256": "46d8eb8cc49494315010f35cc8fd5cd886e675a49154b649951d07978568c0f1"
+      "bytes": 6097,
+      "sha256": "67ea0da7ff532e05beb15fca06e9ae192a44ebe40d11b0895f0b6ecacf5698be"
     },
     {
       "path": "source/app/api/assistant/route.ts",
@@ -910,8 +910,8 @@
       "purpose": "הסבר הפרויקט, הפעלה ומצב האימות הנוכחי.",
       "contents": "מסמך עברי מעודכן: Make AI וקליטת אתר אומתו עד לטיוטה ממתינה, GitHub פורסם; מנהל, שיבוץ, סרטון ומודל עדיין לא הושלמו.",
       "category": "הגשה אקדמית",
-      "bytes": 14233,
-      "sha256": "9b04f2310b69398898900aa972503df9482a4874af7a058aa8ef9549949df7ed"
+      "bytes": 15536,
+      "sha256": "effe92f3eed1b0ab2ac91a3df0a057e416512e4228718c6366b3d0625c5f208e"
     },
     {
       "path": "source/app/layout.tsx",
@@ -1834,20 +1834,12 @@
       "sha256": "b4639c29774936ea17e12fa8ac4270c81ee21e294829132ec85397b6f0ea8f71"
     },
     {
-      "path": "evidence/צילום Make — מסלול הדואר.png",
-      "purpose": "צילום אמיתי של תכנון מסלול הדואר ב־Make.",
-      "contents": "מודולי Gmail, מאגר וחילוץ AI על מסך Make; התרחיש מוצג Inactive וללא הרצה מוצלחת.",
-      "category": "תצלומי הוכחה",
-      "bytes": 92650,
-      "sha256": "bfc1443ae2525c861368257bc45a8873ef8e7b4be7e84efc5292419d45ad0214"
-    },
-    {
       "path": "מפת דרישות והשלמות.md",
       "purpose": "מיפוי הנחיות הקורס מול המצב שנבדק.",
       "contents": "מסמך עברי מעודכן: Make AI וקליטת אתר אומתו עד לטיוטה ממתינה, GitHub פורסם; מנהל, שיבוץ, סרטון ומודל עדיין לא הושלמו.",
       "category": "הגשה אקדמית",
-      "bytes": 5223,
-      "sha256": "5216ca7ceea273456845125ca6e2f00e8ff0b60dc1320bf18687d573b8aa0deb"
+      "bytes": 5257,
+      "sha256": "a29806119c0c16305c7dd6ebeaa4dbd81ad9a634ce2542aa3705890a43311714"
     },
     {
       "path": "submission/מוחמד בדארנה - אמירו גרין - מסמך פרויקט.md",
@@ -1868,10 +1860,10 @@
     {
       "path": "submission/מוחמד בדארנה - אמירו גרין - מצגת טיוטה.pdf",
       "purpose": "מצגת הפרויקט בעברית להצגה בכיתה.",
-      "contents": "12 שקפים: PRD, ארכיטקטורה, תוצאת Make וקליטה באתר, סיכונים, ROI כהנחות, פיילוט עתידי והקלטת גיבוי שעדיין חסרה; כל העמודים רונדרו ונבדקו.",
+      "contents": "15 שקפים בעברית: סיכום הפרויקט, Make AI והקליטה שאומתו, צילומי Gmail ו-Forms מושהים, חיבורים, סיכונים, ROI כהנחות ופיילוט עתידי. אישורי מנהל וסרטון טרם אומתו.",
       "category": "הגשה אקדמית",
-      "bytes": 236551,
-      "sha256": "4aa630d615d7577ee1ccc0307a3a13176f0a6cbba369b16a917e27b01f948be7"
+      "bytes": 377154,
+      "sha256": "1e602b48b789c3af7b6e5fe615ba46413160e72fdb388491c34e1d449ae5cf88"
     },
     {
       "path": "source/build/local-node-bindings-plugin.ts",
@@ -2012,18 +2004,18 @@
     {
       "path": "מוחמד בדארנה - אמירו גרין - מצגת.pdf",
       "purpose": "מצגת הפרויקט בעברית להצגה בכיתה.",
-      "contents": "12 שקפים: PRD, ארכיטקטורה, תוצאת Make וקליטה באתר, סיכונים, ROI כהנחות, פיילוט עתידי והקלטת גיבוי שעדיין חסרה; כל העמודים רונדרו ונבדקו.",
+      "contents": "15 שקפים בעברית: סיכום הפרויקט, Make AI והקליטה שאומתו, צילומי Gmail ו-Forms מושהים, חיבורים, סיכונים, ROI כהנחות ופיילוט עתידי. אישורי מנהל וסרטון טרם אומתו.",
       "category": "הגשה אקדמית",
-      "bytes": 236551,
-      "sha256": "4aa630d615d7577ee1ccc0307a3a13176f0a6cbba369b16a917e27b01f948be7"
+      "bytes": 377154,
+      "sha256": "1e602b48b789c3af7b6e5fe615ba46413160e72fdb388491c34e1d449ae5cf88"
     },
     {
       "path": "validation/אימות חבילת ההגשה.json",
       "purpose": "אימות גרסת חבילת ההגשה וגבולות ההדגמה.",
       "contents": "גיבובי הגרסה הקודמת והשינויים, מזהי הרצה, נתוני הדגמה ומצב התוצרים; פרטי גישה ומפתחות אינם כלולים.",
       "category": "בדיקות ואימות",
-      "bytes": 7577,
-      "sha256": "ce24cf51ed7fe711787c31042e8eb00e6f1b6d89b07e8d0dc5903fde9ab6fb3f"
+      "bytes": 10120,
+      "sha256": "b11333ca80e1f9235698666e794a003d088bf2c5975e165a7f5342a93b6ecc66"
     },
     {
       "path": "source/scripts/local-owner-env.mjs",
@@ -2078,8 +2070,40 @@
       "purpose": "אימות עימוד המצגת העברית המעודכנת.",
       "contents": "12 שקפים עם טקסט בעברית, ללא גלישת טקסט; שקפים מתוקנים נבדקו חזותית.",
       "category": "בדיקות ואימות",
-      "bytes": 106,
-      "sha256": "4795c46d29543265f156f2559390d06f80b30fe4b27d670a1ea55f80f5946272"
+      "bytes": 817,
+      "sha256": "686e26c5ecd942a8cd8325a5b8a4f6b56620e3d0d5e69794314f1293a9d080c8"
+    },
+    {
+      "path": "evidence/צילום Make — מסלול Gmail מושהה.jpg",
+      "purpose": "מסלול Gmail המושהה במצבו השמור העדכני.",
+      "contents": "צילום 10 מודולים: Gmail, מאגר, חילוץ AI, JSON ומענה; Inactive. תכנון שמור, ללא הוכחת קבלת דואר או שליחת מענה.",
+      "category": "בדיקות ואימות",
+      "bytes": 69673,
+      "sha256": "b52fefc398d24e96a78840f0982256eb44331e072263e8c14f1e1952729fec4d"
+    },
+    {
+      "path": "evidence/צילום Make — זמינות עובדים א מושהה.jpg",
+      "purpose": "מסלול קליטת זמינות עובדים א במצב מושהה.",
+      "contents": "Google Sheets Watch New Rows → Make Data Store, ללא אישור אוטומטי; צילום תרשים שמור ו-Inactive, ולא הרצת טופס.",
+      "category": "בדיקות ואימות",
+      "bytes": 51911,
+      "sha256": "5e2018c4fd00d837799512ba8bc58f43bb244dd34616a7568034379154f010da"
+    },
+    {
+      "path": "evidence/צילום Make — זמינות עובדים ב מושהה.jpg",
+      "purpose": "מסלול קליטת זמינות עובדים ב במצב מושהה.",
+      "contents": "Google Sheets Watch New Rows → Make Data Store, ללא אישור אוטומטי; צילום תרשים שמור ו-Inactive, ולא הרצת טופס.",
+      "category": "בדיקות ואימות",
+      "bytes": 51881,
+      "sha256": "ff54242c2e5c1d75cadf8b8c017a4fff959a4c6e0242373e2f539d9d6df48bb5"
+    },
+    {
+      "path": "evidence/מדריך צילומי Make וחיבורים.md",
+      "purpose": "הסבר צילומי Make והחיבורים וגבולות ההוכחה.",
+      "contents": "מבדיל בין Gmail ו-Forms מושהים לבין הרצת AI אמיתית וקליטת האתר; כולל חיבורי הבעלים החסרים ומצב האישורים והסרטון.",
+      "category": "בדיקות ואימות",
+      "bytes": 3875,
+      "sha256": "267f7fe4d20ca88d71940b8378a707c5daad6d38c145c767533d6b3abf1609ff"
     }
   ],
   "submissionRequirementConfirmed": true,

@@ -38,14 +38,20 @@
     "initialPublishedCommit": "9ed2c3f970693ca6e26de6c25844407b1442066d",
     "publicationEvidenceFile": "validation/אימות פרסום GitHub.json",
     "finalScenarioStatesFile": "validation/מצב תרחישי Make עדכני.json",
-    "presentationEvidenceFile": "validation/אימות עימוד מצגת סופי.json"
+    "presentationEvidenceFile": "validation/אימות עימוד מצגת סופי.json",
+    "mailAndAvailabilityScreenshots": [
+      "evidence/צילום Make — מסלול Gmail מושהה.jpg",
+      "evidence/צילום Make — זמינות עובדים א מושהה.jpg",
+      "evidence/צילום Make — זמינות עובדים ב מושהה.jpg"
+    ],
+    "makeScreenshotIndex": "evidence/מדריך צילומי Make וחיבורים.md"
   },
   "repositoryUrl": "https://github.com/mbdarneh440-ops/amiro-green-final-project",
   "modifiedFiles": [
     {
       "path": "README.md",
       "previousSha256": "7e0bbb4879ea914ae365dedbcdf83fc6c48bfe04537b7406ed5fcf12792adcb3",
-      "currentSha256": "9b04f2310b69398898900aa972503df9482a4874af7a058aa8ef9549949df7ed"
+      "currentSha256": "effe92f3eed1b0ab2ac91a3df0a057e416512e4228718c6366b3d0625c5f208e"
     },
     {
       "path": "מדריך הגשה.txt",
@@ -55,7 +61,7 @@
     {
       "path": "מפת דרישות והשלמות.md",
       "previousSha256": "3240a97f2d25d37c46593a9a3e8154e8f0111b0df6df4efd393c505b3f455b67",
-      "currentSha256": "5216ca7ceea273456845125ca6e2f00e8ff0b60dc1320bf18687d573b8aa0deb"
+      "currentSha256": "a29806119c0c16305c7dd6ebeaa4dbd81ad9a634ce2542aa3705890a43311714"
     },
     {
       "path": "מוחמד בדארנה - אמירו גרין - מסמך פרויקט.md",
@@ -135,20 +141,69 @@
     {
       "path": "מוחמד בדארנה - אמירו גרין - מצגת.pdf",
       "previousSha256": "8324ee7b968aac63fb25ded4b845b97e1d68ba1983339e793513fce176ce20f8",
-      "currentSha256": "4aa630d615d7577ee1ccc0307a3a13176f0a6cbba369b16a917e27b01f948be7"
+      "currentSha256": "1e602b48b789c3af7b6e5fe615ba46413160e72fdb388491c34e1d449ae5cf88"
     },
     {
       "path": "submission/מוחמד בדארנה - אמירו גרין - מצגת טיוטה.pdf",
       "previousSha256": "8324ee7b968aac63fb25ded4b845b97e1d68ba1983339e793513fce176ce20f8",
-      "currentSha256": "4aa630d615d7577ee1ccc0307a3a13176f0a6cbba369b16a917e27b01f948be7"
+      "currentSha256": "1e602b48b789c3af7b6e5fe615ba46413160e72fdb388491c34e1d449ae5cf88"
     },
     {
       "path": "validation/אימות עימוד מצגת סופי.json",
       "previousSha256": null,
-      "currentSha256": "4795c46d29543265f156f2559390d06f80b30fe4b27d670a1ea55f80f5946272"
+      "currentSha256": "686e26c5ecd942a8cd8325a5b8a4f6b56620e3d0d5e69794314f1293a9d080c8"
+    },
+    {
+      "path": "make-reference/README.md",
+      "previousSha256": "46d8eb8cc49494315010f35cc8fd5cd886e675a49154b649951d07978568c0f1",
+      "currentSha256": "67ea0da7ff532e05beb15fca06e9ae192a44ebe40d11b0895f0b6ecacf5698be"
+    },
+    {
+      "path": "evidence/מדריך צילומי Make וחיבורים.md",
+      "previousSha256": null,
+      "currentSha256": "267f7fe4d20ca88d71940b8378a707c5daad6d38c145c767533d6b3abf1609ff"
+    },
+    {
+      "path": "evidence/צילום Make — מסלול Gmail מושהה.jpg",
+      "previousSha256": null,
+      "currentSha256": "b52fefc398d24e96a78840f0982256eb44331e072263e8c14f1e1952729fec4d"
+    },
+    {
+      "path": "evidence/צילום Make — זמינות עובדים א מושהה.jpg",
+      "previousSha256": null,
+      "currentSha256": "5e2018c4fd00d837799512ba8bc58f43bb244dd34616a7568034379154f010da"
+    },
+    {
+      "path": "evidence/צילום Make — זמינות עובדים ב מושהה.jpg",
+      "previousSha256": null,
+      "currentSha256": "ff54242c2e5c1d75cadf8b8c017a4fff959a4c6e0242373e2f539d9d6df48bb5"
+    },
+    {
+      "path": "התחילו כאן.html",
+      "previousSha256": "1ce06d5edfc2b82601d4682c84bf62e51ee3477a16664d466d0f06884ea2e4ed",
+      "currentSha256": "00a6f26c970f73ee82c44db1a9cf5d4808b1c44b2a7d60f9209c2c7231808430"
+    },
+    {
+      "path": "מדריך הקבצים.txt",
+      "previousSha256": "e3f3000db3058ed9bd5f71ed17c89fdb792ba82e1d2688af257d6315aa8c78f6",
+      "currentSha256": "a1691db4bc38543235988776446e0f8f9c56d93a47ff7d34e1fcb29a94379a2b"
     }
   ],
   "secretPatternScan": "passed",
   "currentCatalog": "מפת הקבצים.json",
-  "zipVerification": "See sibling release-verification JSON; checked after creation"
+  "zipVerification": "See sibling release-verification JSON; checked after creation",
+  "presentationVisibilityRevision": {
+    "previousArchiveSha256": "d6ef8f1fc4bee5aac7d584125ddbef7f557f421d229551f1a68bf2ae0773ed6b",
+    "visiblePresentationFile": "מצגת - מוחמד בדארנה - אמירו גרין.pdf",
+    "pdfSha256": "1e602b48b789c3af7b6e5fe615ba46413160e72fdb388491c34e1d449ae5cf88",
+    "pdfPages": 15,
+    "scope": "Current paused Gmail/Forms diagrams and connection explanation added; completion flags unchanged"
+  },
+  "removedFiles": [
+    {
+      "path": "evidence/צילום Make — מסלול הדואר.png",
+      "previousSha256": "bfc1443ae2525c861368257bc45a8873ef8e7b4be7e84efc5292419d45ad0214",
+      "reason": "Replaced stale eight-module image with current paused ten-module Gmail diagram"
+    }
+  ]
 }
